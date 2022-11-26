@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.CandidateInformation">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="surname" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="education" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.CandidateRegistrationRequest">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="surname" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="address" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="education" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.CompanyRegistrationRequest">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="address" nullable="false" collection="false"/>
+                <field type="STRING" length="8" name="pib" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="8" name="foundationDate" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="phoneNumber" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.EmploymentPackage">
+            <fields>
+                <field type="INTEGER" length="255" name="employeeNumber" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="employeePosition" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="experience" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="education" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="budgetLimit" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.EmploymentPackageOffer">
+            <fields>
+                <field type="INTEGER" length="255" name="employeeNumber" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="price" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.CandidateInformation" fetchType="LAZY" name="candidates" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.InterviewOptions">
+            <fields>
+                <field type="OFFSETDATETIME" length="255" name="appointmentTime" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.IntervieweeReview">
+            <fields>
+                <field type="STRING" length="255" name="personalAssessment" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="rating" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="impression" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isRecommended" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SubscriptionService">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="price" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.SubscriptionType" fetchType="LAZY" name="type" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SubscriptionType">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
