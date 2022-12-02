@@ -30,7 +30,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_VqOk23GeEe2LErBa4BYscQ" name="https://login.salesforce.com/services/Soap/u/24.0" content="https://login.salesforce.com/services/Soap/u/24.0" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_VqOk3HGeEe2LErBa4BYscQ" key="restEndpoint">
-                <expression xmi:type="expression:Expression" xmi:id="_VqOk3XGeEe2LErBa4BYscQ" name="http://localhost:9100/auth/register" content="http://localhost:9100/auth/register" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_VqOk3XGeEe2LErBa4BYscQ" name="localhost:9000/auth-service/payments/" content="localhost:9000/auth-service/payments/" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_VqOk3nGeEe2LErBa4BYscQ" key="proxyHost">
                 <expression xmi:type="expression:Expression" xmi:id="_VqOk33GeEe2LErBa4BYscQ" content="" returnTypeFixed="true"/>
@@ -56,36 +56,16 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_VqOk7HGeEe2LErBa4BYscQ" key="fieldValues">
                 <expression xmi:type="expression:TableExpression" xmi:id="_VqOk7XGeEe2LErBa4BYscQ">
                   <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk7nGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk73GeEe2LErBa4BYscQ" name="email" content="email"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk8HGeEe2LErBa4BYscQ" name="email" content="email"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk73GeEe2LErBa4BYscQ" name="apiKey" content="apiKey"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk8HGeEe2LErBa4BYscQ" name="1" content="1"/>
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk8XGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk8nGeEe2LErBa4BYscQ" name="password" content="password"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk83GeEe2LErBa4BYscQ" name="password" content="password"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk8nGeEe2LErBa4BYscQ" name="amount" content="amount"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk83GeEe2LErBa4BYscQ" name="10000" content="10000"/>
                   </expressions>
                   <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk9HGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk9XGeEe2LErBa4BYscQ" name="companyName" content="companyName"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk9nGeEe2LErBa4BYscQ" name="companyName" content="companyName"/>
-                  </expressions>
-                  <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk93GeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk-HGeEe2LErBa4BYscQ" name="firstName" content="firstName"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk-XGeEe2LErBa4BYscQ" name="firstName" content="firstName"/>
-                  </expressions>
-                  <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk-nGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk-3GeEe2LErBa4BYscQ" name="lastName" content="lastName"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk_HGeEe2LErBa4BYscQ" name="lastName" content="lastName"/>
-                  </expressions>
-                  <expressions xmi:type="expression:ListExpression" xmi:id="_VqOk_XGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk_nGeEe2LErBa4BYscQ" name="country" content="country"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk_3GeEe2LErBa4BYscQ" name="country" content="country"/>
-                  </expressions>
-                  <expressions xmi:type="expression:ListExpression" xmi:id="_VqOlAHGeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOlAXGeEe2LErBa4BYscQ" name="state" content="state"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOlAnGeEe2LErBa4BYscQ" name="state" content="state"/>
-                  </expressions>
-                  <expressions xmi:type="expression:ListExpression" xmi:id="_VqOlA3GeEe2LErBa4BYscQ">
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOlBHGeEe2LErBa4BYscQ" name="city" content="city"/>
-                    <expressions xmi:type="expression:Expression" xmi:id="_VqOlBXGeEe2LErBa4BYscQ" name="city" content="city"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk9XGeEe2LErBa4BYscQ" name="paymentMethodId" content="paymentMethodId"/>
+                    <expressions xmi:type="expression:Expression" xmi:id="_VqOk9nGeEe2LErBa4BYscQ" name="1fba8a11-f059-4bb3-aa6b-89151886503d" content="1fba8a11-f059-4bb3-aa6b-89151886503d"/>
                   </expressions>
                 </expression>
               </parameters>

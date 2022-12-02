@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="StaffMate">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="candidate1">
+      <firstName>Candidate</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="comDept_e2">
+      <firstName>ComDept</firstName>
+      <lastName>E2</lastName>
+      <manager>comDept_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_hr_e2">
+      <firstName>C3 HR</firstName>
+      <lastName>E2</lastName>
+      <manager>c3_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_pr_e2">
+      <firstName>C1 PR</firstName>
+      <lastName>E2</lastName>
+      <manager>c1_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_pr_e1">
+      <firstName>C2 PR</firstName>
+      <lastName>E1</lastName>
+      <manager>c2_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_pr_e2">
+      <firstName>C2 PR</firstName>
+      <lastName>E2</lastName>
+      <manager>c2_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_pr_e1">
+      <firstName>C3 PR</firstName>
+      <lastName>E1</lastName>
+      <manager>c3_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_pr_e2">
+      <firstName>C3 PR</firstName>
+      <lastName>E2</lastName>
+      <manager>c3_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="candidate2">
+      <firstName>Candidate</firstName>
+      <lastName>2</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="comDept_boss">
+      <firstName>ComDept</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_hr_boss">
+      <firstName>C1 HR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_pr_boss">
+      <firstName>C1 PR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_hr_boss">
+      <firstName>C2 HR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_hr_boss">
+      <firstName>C3 HR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_pr_boss">
+      <firstName>C3 PR </firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_pr_boss">
+      <firstName>C2 PR</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="compDept_e1">
+      <firstName>ComDept</firstName>
+      <lastName>E1</lastName>
+      <manager>comDept_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="premiumDept_e1">
+      <firstName>PremiumDept</firstName>
+      <lastName>E1</lastName>
+      <manager>premiumDept_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="premiumDept_e2">
+      <firstName>PremiumDept</firstName>
+      <lastName>E2</lastName>
+      <manager>premiumDept_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_hr_e1">
+      <firstName>C1 HR</firstName>
+      <lastName>E1</lastName>
+      <manager>c1_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_hr_e2">
+      <firstName>C1 HR</firstName>
+      <lastName>E2</lastName>
+      <manager>c1_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_hr_e1">
+      <firstName>C2 HR</firstName>
+      <lastName>E1</lastName>
+      <manager>c2_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_hr_e2">
+      <firstName>C2 HR</firstName>
+      <lastName>E2</lastName>
+      <manager>c2_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_hr_e1">
+      <firstName>C3 HR</firstName>
+      <lastName>E1</lastName>
+      <manager>c3_hr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="premiumDept_boss">
+      <firstName>PremiumDept</firstName>
+      <lastName>Boss</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c1_pr_e1">
+      <firstName>C1 PR</firstName>
+      <lastName>E1</lastName>
+      <manager>c1_pr_boss</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="client">
+      <displayName>Client</displayName>
+    </role>
+    <role name="department_boss">
+      <displayName>Department Boss</displayName>
+    </role>
+    <role name="employee">
+      <displayName>Employee</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Group1" parentPath="/Group1">
+      <displayName>Group1</displayName>
+    </group>
+    <group name="Group2" parentPath="/Group2">
+      <displayName>Group2</displayName>
+    </group>
+    <group name="agency">
+      <displayName>Agency</displayName>
+    </group>
+    <group name="client">
+      <displayName>Client</displayName>
+    </group>
+    <group name="company_1" parentPath="/client">
+      <displayName>Company 1</displayName>
+    </group>
+    <group name="employee" parentPath="/agency">
+      <displayName>Employee</displayName>
+    </group>
+    <group name="company_department" parentPath="/agency/employee">
+      <displayName>Company Department</displayName>
+    </group>
+    <group name="premium_employment_department" parentPath="/agency/employee">
+      <displayName>Preimum Emplyment Department</displayName>
+    </group>
+    <group name="hr" parentPath="/client/company_1">
+      <displayName>HR</displayName>
+    </group>
+    <group name="project" parentPath="/client/company_1">
+      <displayName>Project</displayName>
+    </group>
+    <group name="company_2" parentPath="/client">
+      <displayName>Company 2</displayName>
+    </group>
+    <group name="company_3" parentPath="/client">
+      <displayName>Company 3</displayName>
+    </group>
+    <group name="hr" parentPath="/client/company_2">
+      <displayName>HR</displayName>
+    </group>
+    <group name="project" parentPath="/client/company_2">
+      <displayName>Project</displayName>
+    </group>
+    <group name="hr" parentPath="/client/company_3">
+      <displayName>HR</displayName>
+    </group>
+    <group name="project" parentPath="/client/company_3">
+      <displayName>Project</displayName>
+    </group>
+    <group name="candidate" parentPath="/client">
+      <displayName>Candidate</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>comDept_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>company_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_hr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_pr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_pr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_pr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_pr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_pr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>candidate2</userName>
+      <roleName>client</roleName>
+      <groupName>candidate</groupName>
+      <groupParentPath>/client</groupParentPath>
+    </membership>
+    <membership>
+      <userName>comDept_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>company_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_hr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_pr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_hr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_hr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_pr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_pr_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>compDept_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>company_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>premiumDept_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>premium_employment_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>premiumDept_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>premium_employment_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_hr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_hr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_hr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_hr_e2</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_2</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_hr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/client/company_3</groupParentPath>
+    </membership>
+    <membership>
+      <userName>candidate1</userName>
+      <roleName>client</roleName>
+      <groupName>candidate</groupName>
+      <groupParentPath>/client</groupParentPath>
+    </membership>
+    <membership>
+      <userName>premiumDept_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>premium_employment_department</groupName>
+      <groupParentPath>/agency/employee</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_hr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c1_pr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c2_hr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c2_pr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c3_hr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c3_pr_boss</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c1_pr_e1</userName>
+      <roleName>employee</roleName>
+      <groupName>project</groupName>
+      <groupParentPath>/client/company_1</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
