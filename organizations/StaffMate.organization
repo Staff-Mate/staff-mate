@@ -137,7 +137,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="compDept_e1">
+    <user userName="comDept_e1">
       <firstName>ComDept</firstName>
       <lastName>E1</lastName>
       <manager>comDept_boss</manager>
@@ -226,6 +226,15 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="guest">
+      <firstName>Guest</firstName>
+      <lastName> Guest</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">guest</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="client">
@@ -251,7 +260,7 @@
     <group name="client">
       <displayName>Client</displayName>
     </group>
-    <group name="company_1" parentPath="/client">
+    <group name="company_1" parentPath="/client/company">
       <displayName>Company 1</displayName>
     </group>
     <group name="employee" parentPath="/agency">
@@ -263,32 +272,38 @@
     <group name="premium_employment_department" parentPath="/agency/employee">
       <displayName>Preimum Emplyment Department</displayName>
     </group>
-    <group name="hr" parentPath="/client/company_1">
+    <group name="hr" parentPath="/client/company/company_1">
       <displayName>HR</displayName>
     </group>
-    <group name="project" parentPath="/client/company_1">
+    <group name="project" parentPath="/client/company/company_1">
       <displayName>Project</displayName>
     </group>
-    <group name="company_2" parentPath="/client">
+    <group name="company_2" parentPath="/client/company">
       <displayName>Company 2</displayName>
     </group>
-    <group name="company_3" parentPath="/client">
+    <group name="company_3" parentPath="/client/company">
       <displayName>Company 3</displayName>
     </group>
-    <group name="hr" parentPath="/client/company_2">
+    <group name="hr" parentPath="/client/company/company_2">
       <displayName>HR</displayName>
     </group>
-    <group name="project" parentPath="/client/company_2">
+    <group name="project" parentPath="/client/company/company_2">
       <displayName>Project</displayName>
     </group>
-    <group name="hr" parentPath="/client/company_3">
+    <group name="hr" parentPath="/client/company/company_3">
       <displayName>HR</displayName>
     </group>
-    <group name="project" parentPath="/client/company_3">
+    <group name="project" parentPath="/client/company/company_3">
       <displayName>Project</displayName>
     </group>
     <group name="candidate" parentPath="/client">
       <displayName>Candidate</displayName>
+    </group>
+    <group name="company" parentPath="/client">
+      <displayName>Company</displayName>
+    </group>
+    <group name="unregistered" parentPath="/client">
+      <displayName>Unregistered</displayName>
     </group>
   </groups>
   <memberships>
@@ -302,37 +317,37 @@
       <userName>c3_hr_e2</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>c1_pr_e2</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
     </membership>
     <membership>
       <userName>c2_pr_e1</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
       <userName>c2_pr_e2</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
       <userName>c3_pr_e1</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>c3_pr_e2</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>candidate2</userName>
@@ -350,40 +365,40 @@
       <userName>c1_hr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
     </membership>
     <membership>
       <userName>c1_pr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
     </membership>
     <membership>
       <userName>c2_hr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
       <userName>c3_hr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>c3_pr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>c2_pr_boss</userName>
       <roleName>department_boss</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
-      <userName>compDept_e1</userName>
+      <userName>comDept_e1</userName>
       <roleName>employee</roleName>
       <groupName>company_department</groupName>
       <groupParentPath>/agency/employee</groupParentPath>
@@ -404,31 +419,31 @@
       <userName>c1_hr_e1</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
     </membership>
     <membership>
       <userName>c1_hr_e2</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
     </membership>
     <membership>
       <userName>c2_hr_e1</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
       <userName>c2_hr_e2</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_2</groupParentPath>
+      <groupParentPath>/client/company/company_2</groupParentPath>
     </membership>
     <membership>
       <userName>c3_hr_e1</userName>
       <roleName>employee</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/client/company_3</groupParentPath>
+      <groupParentPath>/client/company/company_3</groupParentPath>
     </membership>
     <membership>
       <userName>candidate1</userName>
@@ -476,7 +491,18 @@
       <userName>c1_pr_e1</userName>
       <roleName>employee</roleName>
       <groupName>project</groupName>
-      <groupParentPath>/client/company_1</groupParentPath>
+      <groupParentPath>/client/company/company_1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>guest</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>guest</userName>
+      <roleName>client</roleName>
+      <groupName>unregistered</groupName>
+      <groupParentPath>/client</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
