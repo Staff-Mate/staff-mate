@@ -15,7 +15,9 @@
       <lastName>E2</lastName>
       <manager>comDept_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>comdept2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -85,7 +87,9 @@
       <firstName>ComDept</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>comdeptboss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -142,7 +146,9 @@
       <lastName>E1</lastName>
       <manager>comDept_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>comdept1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
