@@ -505,12 +505,6 @@
       <groupParentPath>/client</groupParentPath>
     </membership>
     <membership>
-      <userName>comDept_boss</userName>
-      <roleName>department_boss</roleName>
-      <groupName>employee</groupName>
-      <groupParentPath>/agency</groupParentPath>
-    </membership>
-    <membership>
       <userName>comDept_e1</userName>
       <roleName>employee</roleName>
       <groupName>employee</groupName>
@@ -523,12 +517,6 @@
       <groupParentPath>/agency</groupParentPath>
     </membership>
     <membership>
-      <userName>premiumDept_boss</userName>
-      <roleName>department_boss</roleName>
-      <groupName>employee</groupName>
-      <groupParentPath>/agency</groupParentPath>
-    </membership>
-    <membership>
       <userName>premiumDept_e1</userName>
       <roleName>employee</roleName>
       <groupName>employee</groupName>
@@ -537,6 +525,18 @@
     <membership>
       <userName>premiumDept_e2</userName>
       <roleName>employee</roleName>
+      <groupName>employee</groupName>
+      <groupParentPath>/agency</groupParentPath>
+    </membership>
+    <membership>
+      <userName>premiumDept_boss</userName>
+      <roleName>department_boss</roleName>
+      <groupName>employee</groupName>
+      <groupParentPath>/agency</groupParentPath>
+    </membership>
+    <membership>
+      <userName>comDept_boss</userName>
+      <roleName>department_boss</roleName>
       <groupName>employee</groupName>
       <groupParentPath>/agency</groupParentPath>
     </membership>
