@@ -97,7 +97,9 @@
       <firstName>C1 HR</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.hr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -113,7 +115,9 @@
       <firstName>C2 HR</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.hr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -121,7 +125,9 @@
       <firstName>C3 HR</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.hr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
