@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "reviewEmploymentPackageForm",
   "name" : "reviewEmploymentPackageForm",
-  "lastUpdate" : 1671894494557,
+  "lastUpdate" : 1671935025926,
   "rows" : [
     [
       {
@@ -217,10 +217,10 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "hidden" : {
@@ -255,6 +255,59 @@
                 "reference" : "6ce8b8e2-871e-4ebd-988b-baf803eecc4f",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Not enough employees for employment package"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "hasNotEnoughEmployees"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "db571b9d-15d1-4443-857a-6c74aeb0a28d",
+                "hasValidationError" : false,
+                "id" : "pbCheckbox",
                 "description" : ""
               }
             ],
@@ -303,8 +356,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!hasNotEnoughEmployees"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -339,7 +392,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.offerInput.employeeNumber"
+                          "value" : "newEmployeeNumber"
                         },
                         "required" : {
                           "type" : "constant",
@@ -358,10 +411,12 @@
                           "value" : ""
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 0
                         },
                         "max" : {
-                          "type" : "constant"
+                          "type" : "expression",
+                          "value" : "employmentPackage.employeeNumber - 1"
                         },
                         "step" : {
                           "type" : "constant",
@@ -793,51 +848,6 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Has Enough Employees"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.hasEnoughEmployees"
-                  }
-                },
-                "reference" : "db571b9d-15d1-4443-857a-6c74aeb0a28d",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
                   "removeItem" : {
                     "type" : "variable"
                   },
@@ -999,7 +1009,8 @@
         "    \"employeeNumber\" : 0,\r",
         "    \"price\" : 0\r",
         "  },\r",
-        "  \"hasEnoughEmployees\" : false\r",
+        "  \"hasEnoughEmployees\" : true,\r",
+        "  \"newEmployeeNumber\": 0\r",
         "}"
       ],
       "exposed" : false
@@ -1039,7 +1050,8 @@
         "\t\temploymentPackageInput: {",
         "\t\t\tbudgetLimit: $data.employmentPackage.budgetLimit !== undefined ? $data.employmentPackage.budgetLimit : null",
         "\t\t},",
-        "\t\thasEnoughEmployees: $data.formInput.hasEnoughEmployees",
+        "\t\thasEnoughEmployees: !$data.hasNotEnoughEmployees,",
+        "\t\tnewEmployeeNumber: $data.newEmployeeNumber",
         "\t}",
         "}"
       ],
@@ -1084,6 +1096,20 @@
       "type" : "url",
       "value" : [
         "../API/identity/user?p=0&c=100&f=group_id={{group[0].id}}"
+      ],
+      "exposed" : false
+    },
+    "hasNotEnoughEmployees" : {
+      "type" : "expression",
+      "value" : [
+        "return !$data.formInput.hasEnoughEmployees"
+      ],
+      "exposed" : false
+    },
+    "newEmployeeNumber" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.formInput.newEmployeeNumber"
       ],
       "exposed" : false
     }
