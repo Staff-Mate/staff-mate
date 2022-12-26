@@ -112,6 +112,7 @@
     <user userName="c1_hr_boss">
       <firstName>C1 HR</firstName>
       <lastName>Boss</lastName>
+      <manager>c1_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c1.hr.boss@gmail.com</email>
@@ -122,6 +123,7 @@
     <user userName="c1_pr_boss">
       <firstName>C1 PR</firstName>
       <lastName>Boss</lastName>
+      <manager>c1_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c1.pr.boss@gmail.com</email>
@@ -132,6 +134,7 @@
     <user userName="c2_hr_boss">
       <firstName>C2 HR</firstName>
       <lastName>Boss</lastName>
+      <manager>c2_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c2.hr.boss@gmail.com</email>
@@ -142,6 +145,7 @@
     <user userName="c3_hr_boss">
       <firstName>C3 HR</firstName>
       <lastName>Boss</lastName>
+      <manager>c3_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c3.hr.boss@gmail.com</email>
@@ -152,6 +156,7 @@
     <user userName="c3_pr_boss">
       <firstName>C3 PR </firstName>
       <lastName>Boss</lastName>
+      <manager>c3_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c3.pr.boss@gmail.com</email>
@@ -162,6 +167,7 @@
     <user userName="c2_pr_boss">
       <firstName>C2 PR</firstName>
       <lastName>Boss</lastName>
+      <manager>c2_ceo</manager>
       <personalData/>
       <professionalData>
         <email>c2.pr.boss@gmail.com</email>
@@ -287,6 +293,27 @@
       <password encrypted="false">guest</password>
       <customUserInfoValues/>
     </user>
+    <user userName="c1_ceo">
+      <firstName>HTEC</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c2_ceo">
+      <firstName>Hybrid</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="c3_ceo">
+      <firstName>Levi9</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="client">
@@ -297,6 +324,9 @@
     </role>
     <role name="employee">
       <displayName>Employee</displayName>
+    </role>
+    <role name="ceo">
+      <displayName>CEO</displayName>
     </role>
   </roles>
   <groups>
@@ -591,6 +621,39 @@
       <roleName>department_boss</roleName>
       <groupName>employee</groupName>
       <groupParentPath>/agency</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c1_ceo</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c1_ceo</userName>
+      <roleName>ceo</roleName>
+      <groupName>company_1</groupName>
+      <groupParentPath>/client/company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c2_ceo</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c2_ceo</userName>
+      <roleName>ceo</roleName>
+      <groupName>company_2</groupName>
+      <groupParentPath>/client/company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>c3_ceo</userName>
+      <roleName>client</roleName>
+      <groupName>agency</groupName>
+    </membership>
+    <membership>
+      <userName>c3_ceo</userName>
+      <roleName>ceo</roleName>
+      <groupName>company_3</groupName>
+      <groupParentPath>/client/company</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
