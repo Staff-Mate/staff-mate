@@ -6,7 +6,9 @@
       <firstName>Candidate</firstName>
       <lastName>1</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>candidate1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -26,7 +28,9 @@
       <lastName>E2</lastName>
       <manager>c3_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.hr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -35,7 +39,9 @@
       <lastName>E2</lastName>
       <manager>c1_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.pr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -44,7 +50,9 @@
       <lastName>E1</lastName>
       <manager>c2_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.pr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -53,7 +61,9 @@
       <lastName>E2</lastName>
       <manager>c2_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.pr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -62,7 +72,9 @@
       <lastName>E1</lastName>
       <manager>c3_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.pr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -71,7 +83,9 @@
       <lastName>E2</lastName>
       <manager>c3_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.pr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -79,7 +93,9 @@
       <firstName>Candidate</firstName>
       <lastName>2</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>candidate2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -107,7 +123,9 @@
       <firstName>C1 PR</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.pr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -135,7 +153,9 @@
       <firstName>C3 PR </firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.pr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -143,7 +163,9 @@
       <firstName>C2 PR</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.pr.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -163,7 +185,9 @@
       <lastName>E1</lastName>
       <manager>premiumDept_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>prem.dept.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -172,7 +196,9 @@
       <lastName>E2</lastName>
       <manager>premiumDept_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>prem.dept.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -181,7 +207,9 @@
       <lastName>E1</lastName>
       <manager>c1_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.hr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -190,7 +218,9 @@
       <lastName>E2</lastName>
       <manager>c1_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.hr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -199,7 +229,9 @@
       <lastName>E1</lastName>
       <manager>c2_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.hr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -208,7 +240,9 @@
       <lastName>E2</lastName>
       <manager>c2_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2.hr.e2@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -217,7 +251,9 @@
       <lastName>E1</lastName>
       <manager>c3_hr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3.hr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -225,7 +261,9 @@
       <firstName>PremiumDept</firstName>
       <lastName>Boss</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>prem.dept.boss@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -234,7 +272,9 @@
       <lastName>E1</lastName>
       <manager>c1_pr_boss</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1.pr.e1@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
