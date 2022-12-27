@@ -323,20 +323,9 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_8sXJ8HPKEe2wFoHWnk-4SA" name="CompanyDepartment Boss Lane" actor="_bId8gHPKEe2wFoHWnk-4SA">
         <elements xmi:type="process:Task" xmi:id="_9cMlEHPCEe2wFoHWnk-4SA" name="Choose employee for task " outgoing="_2p1D8HPDEe2wFoHWnk-4SA" incoming="_MPrYQIOtEe2PNfXEpooMVA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_9cNzMXPCEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_9cNzMHPCEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_9cNzMXPCEe2wFoHWnk-4SA" name="Assign task to employee" content="Assign task to employee" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_9cNzMHPCEe2wFoHWnk-4SA" name="Please choose employe to review employment package and create offer." content="Please choose employe to review employment package and create offer." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9cNzMnPCEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_vrP_pYMWEe2z3NH_cfZBHw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_vrP_poMWEe2z3NH_cfZBHw" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vrP_p4MWEe2z3NH_cfZBHw" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_vrP_qIMWEe2z3NH_cfZBHw" name="employmentPackageInput.employeeNumber" content="employmentPackageInput?.employeeNumber" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_vrP_qYMWEe2z3NH_cfZBHw" name="employmentPackageInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_vrP_qoMWEe2z3NH_cfZBHw" type="JAVA_METHOD" expression="setEmployeeNumber">
-              <inputTypes>java.lang.Integer</inputTypes>
-            </operator>
-          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_vrP_q4MWEe2z3NH_cfZBHw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_vrP_rIMWEe2z3NH_cfZBHw" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vrP_rYMWEe2z3NH_cfZBHw" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
@@ -346,18 +335,6 @@
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_vrP_sIMWEe2z3NH_cfZBHw" type="JAVA_METHOD" expression="setBudgetLimit">
               <inputTypes>java.lang.Double</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_vrP_sYMWEe2z3NH_cfZBHw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_vrP_soMWEe2z3NH_cfZBHw" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vrP_s4MWEe2z3NH_cfZBHw" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_vrP_tIMWEe2z3NH_cfZBHw" name="employmentPackageInput.wantedEmployees" content="def wantedEmployeeList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;employmentPackageInput?.wantedEmployees.each{&#xD;&#xA;&#x9;//Add WantedEmployee instance&#xD;&#xA;&#x9;wantedEmployeeList.add({ currentWantedEmployeeInput ->&#xD;&#xA;&#x9;&#x9;def wantedEmployeeVar = employmentPackage.wantedEmployees.find { it.persistenceId.toString() == currentWantedEmployeeInput.persistenceId_string} ?: new com.company.model.WantedEmployee()&#xD;&#xA;&#x9;&#x9;wantedEmployeeVar.employeePosition = currentWantedEmployeeInput.employeePosition&#xD;&#xA;&#x9;&#x9;wantedEmployeeVar.experience = currentWantedEmployeeInput.experience&#xD;&#xA;&#x9;&#x9;wantedEmployeeVar.education = currentWantedEmployeeInput.education&#xD;&#xA;&#x9;&#x9;wantedEmployeeVar.budget = currentWantedEmployeeInput.budget&#xD;&#xA;&#x9;&#x9;return wantedEmployeeVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return wantedEmployeeList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_vrP_tYMWEe2z3NH_cfZBHw" name="employmentPackageInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vrP_toMWEe2z3NH_cfZBHw" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_vrP_t4MWEe2z3NH_cfZBHw" type="JAVA_METHOD" expression="setWantedEmployees">
-              <inputTypes>java.util.List</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_m5uDIIMXEe2z3NH_cfZBHw">
@@ -377,45 +354,23 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_9cNzN3PCEe2wFoHWnk-4SA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_9cNzNnPCEe2wFoHWnk-4SA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_9cNzOXPCEe2wFoHWnk-4SA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_2EgAsIMWEe2z3NH_cfZBHw" name="chooseEmployeeForm" content="8c893467-f840-44c7-95ba-7ea1adf6cec9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_3XAeQIYzEe2k_M817WFncw" name="chooseEmployeeFormm" content="62012028-1a0d-4c07-9497-ab36e1b5a9d8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_9cNzOHPCEe2wFoHWnk-4SA">
             <inputs xmi:type="process:ContractInput" xmi:id="_vrPYkIMWEe2z3NH_cfZBHw" name="employmentPackageInput" type="COMPLEX" dataReference="employmentPackage" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_vrPYkYMWEe2z3NH_cfZBHw" name="employeeNumber" type="INTEGER" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_vrPYkoMWEe2z3NH_cfZBHw" name="budgetLimit" type="DECIMAL" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_vrPYk4MWEe2z3NH_cfZBHw" name="wantedEmployees" type="COMPLEX" multiple="true" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_vrPYlYMWEe2z3NH_cfZBHw" name="employeePosition" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_vrPYloMWEe2z3NH_cfZBHw" name="experience" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_vrPYl4MWEe2z3NH_cfZBHw" name="education" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_vrPYmIMWEe2z3NH_cfZBHw" name="budget" type="DECIMAL" createMode="false"/>
-              </inputs>
             </inputs>
             <inputs xmi:type="process:ContractInput" xmi:id="_xwfN0IMWEe2z3NH_cfZBHw" name="chosenEmployeeId" type="INTEGER">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_xwfN0YMWEe2z3NH_cfZBHw"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_vrP_oIMWEe2z3NH_cfZBHw" expression="employmentPackageInput?.employeeNumber != null" errorMessage="employeeNumber is mandatory for EmploymentPackage" name="mandatory_employmentPackageInput_employeeNumber">
-              <inputNames>employmentPackageInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_vrP_oYMWEe2z3NH_cfZBHw" expression="employmentPackageInput?.wantedEmployees?.employeePosition.flatten().every{it!=null}" errorMessage="employeePosition is mandatory for WantedEmployee" name="mandatory_employmentPackageInput_wantedEmployees_employeePosition">
-              <inputNames>employmentPackageInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_vrP_ooMWEe2z3NH_cfZBHw" expression="employmentPackageInput?.wantedEmployees?.experience.flatten().every{it!=null}" errorMessage="experience is mandatory for WantedEmployee" name="mandatory_employmentPackageInput_wantedEmployees_experience">
-              <inputNames>employmentPackageInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_vrP_o4MWEe2z3NH_cfZBHw" expression="employmentPackageInput?.wantedEmployees?.education.flatten().every{it!=null}" errorMessage="education is mandatory for WantedEmployee" name="mandatory_employmentPackageInput_wantedEmployees_education">
-              <inputNames>employmentPackageInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_vrP_pIMWEe2z3NH_cfZBHw" expression="employmentPackageInput?.wantedEmployees?.budget.flatten().every{it!=null}" errorMessage="budget is mandatory for WantedEmployee" name="mandatory_employmentPackageInput_wantedEmployees_budget">
-              <inputNames>employmentPackageInput</inputNames>
-            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9cNzO3PCEe2wFoHWnk-4SA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_Y-5LcHPLEe2wFoHWnk-4SA" name="CompanyDepartment Employee Lane" actor="_UQBBgHPLEe2wFoHWnk-4SA">
         <elements xmi:type="process:Task" xmi:id="_5AARIHPDEe2wFoHWnk-4SA" name="Review employment package" outgoing="_EIdMQHPEEe2wFoHWnk-4SA" incoming="_2p1D8HPDEe2wFoHWnk-4SA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_2pwLcnPDEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_2pwLcXPDEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_2pwLcnPDEe2wFoHWnk-4SA" name="Review employment package" content="Review employment package" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_2pwLcXPDEe2wFoHWnk-4SA" name="Please check if you have enough employees for requested employment package." content="Please check if you have enough employees for requested employment package." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_2pwLc3PDEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_I_LhkIOREe2Jv4g_JZuI6A">
             <leftOperand xmi:type="expression:Expression" xmi:id="_I_LhkYOREe2Jv4g_JZuI6A" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
@@ -444,11 +399,11 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ys-Y4IOSEe2Jv4g_JZuI6A" name="offer" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackageOffer"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_wM3MkoOSEe2Jv4g_JZuI6A" name="newScript()" content="def newEmployeeNum = newEmployeeNumber;&#xD;&#xA;if (newEmployeeNum &lt;= 0) {&#xD;&#xA;&#x9;newEmployeeNum = employmentPackage.getEmployeeNumber()&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return employmentPackageOfferDAO.newInstance(newEmployeeNum, 0)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.EmploymentPackageOffer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_akiTcIP5Ee2WOob8l-7ezA" name="newEmployeeNumber" type="INTEGER">
-                <mapping xmi:type="process:ContractInputMapping" xmi:id="_akiTcYP5Ee2WOob8l-7ezA"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_kqpwAIY3Ee2k_M817WFncw" name="newEmployeeNumber" type="INTEGER">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_kqpwAYY3Ee2k_M817WFncw"/>
               </referencedElements>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_akiTcoP5Ee2WOob8l-7ezA" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_akiTc4P5Ee2WOob8l-7ezA" name="employmentPackageOfferDAO" content="employmentPackageOfferDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.EmploymentPackageOfferDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kqpwAoY3Ee2k_M817WFncw" name="employmentPackage" dataType="_ZPE9tHPAEe2wFoHWnk-4SA" className="com.company.model.EmploymentPackage"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_kqpwA4Y3Ee2k_M817WFncw" name="employmentPackageOfferDAO" content="employmentPackageOfferDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.EmploymentPackageOfferDAO" returnTypeFixed="true"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_wM3Mk4OSEe2Jv4g_JZuI6A" type="ASSIGNMENT"/>
           </operations>
@@ -478,8 +433,8 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5AA4O3PDEe2wFoHWnk-4SA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_h1au8HPFEe2wFoHWnk-4SA" name="Create employment offer" outgoing="_FEx84IUjEe2PW4Q5TBI3aA" incoming="_gF8OAHPIEe2wFoHWnk-4SA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_g0sRwnPFEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_g0sRwXPFEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_g0sRwnPFEe2wFoHWnk-4SA" name="Create employment offer" content="Create employment offer" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_g0sRwXPFEe2wFoHWnk-4SA" name="Please create offer for employment package." content="Please create offer for employment package." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_g0sRw3PFEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_4MBOUoP8Ee2WOob8l-7ezA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_4MBOU4P8Ee2WOob8l-7ezA" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
@@ -581,8 +536,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_9Om7YHPKEe2wFoHWnk-4SA" name="Company HR Boss Lane" actor="_gWybgHPKEe2wFoHWnk-4SA">
         <elements xmi:type="process:Task" xmi:id="_bWxF8HPEEe2wFoHWnk-4SA" name="Company HR boss decision" outgoing="_dWtH8HPFEe2wFoHWnk-4SA" incoming="_ajBU0HPEEe2wFoHWnk-4SA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_ai9qcnPEEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_ai9qcXPEEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_ai9qcnPEEe2wFoHWnk-4SA" name="Shortage of employees" content="Shortage of employees" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_ai9qcXPEEe2wFoHWnk-4SA" name="StaffMate currently does not have enough employees for requestd emoplyment package. Please choose if you want to accept the offer with less employeees then requested." content="StaffMate currently does not have enough employees for requestd emoplyment package. Please choose if you want to accept the offer with less employeees then requested." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ai9qc3PEEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_GgkyUIOrEe2PNfXEpooMVA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_GgkyUYOrEe2PNfXEpooMVA" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">
@@ -624,8 +579,8 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_bWxtCHPEEe2wFoHWnk-4SA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_IMSjMHPGEe2wFoHWnk-4SA" name="Review offer (Company HR boss)" outgoing="_iSLuAHPGEe2wFoHWnk-4SA" incoming="_FEx84IUjEe2PW4Q5TBI3aA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_D9rNsnPGEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_D9rNsXPGEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_D9rNsnPGEe2wFoHWnk-4SA" name="Review employment package offer" content="Review employment package offer" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_D9rNsXPGEe2wFoHWnk-4SA" name="Please accept or decline the offer shown here." content="Please accept or decline offer shown here." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_D9rNs3PGEe2wFoHWnk-4SA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_MPilUoUhEe2PW4Q5TBI3aA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_MPjMYIUhEe2PW4Q5TBI3aA" name="employmentPackage" content="employmentPackage" type="TYPE_VARIABLE" returnType="com.company.model.EmploymentPackage">

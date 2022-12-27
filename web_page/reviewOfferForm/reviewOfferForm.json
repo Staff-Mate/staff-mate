@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "reviewOfferForm",
   "name" : "reviewOfferForm",
-  "lastUpdate" : 1672068196693,
+  "lastUpdate" : 1672180846828,
   "rows" : [
     [
       {
@@ -251,33 +251,25 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -285,30 +277,26 @@
                           "type" : "interpolation",
                           "value" : "Budget Limit"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "top"
                         },
-                        "dimension" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : 4
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "employmentPackage.budgetLimit"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{employmentPackage.budgetLimit}}"
                         },
-                        "required" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : "left"
                         }
                       },
-                      "reference" : "14caec33-e316-4878-9be5-63771496708a",
+                      "reference" : "152af328-2b70-4592-84f6-4784a9a69173",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbText"
                     }
                   ],
                   [
@@ -778,7 +766,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "User Ids"
+                          "value" : "Information about employees"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -787,6 +775,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "99be7e32-0b9f-41f9-819e-3408d39ee7fe",
@@ -821,7 +813,8 @@
                           "type" : "constant",
                           "value" : [
                             "Id",
-                            "Username"
+                            "Username",
+                            "Position"
                           ]
                         },
                         "type" : {
@@ -843,7 +836,8 @@
                           "type" : "constant",
                           "value" : [
                             "id",
-                            "userName"
+                            "userName",
+                            "job_title"
                           ]
                         },
                         "sortColumns" : {
@@ -905,7 +899,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is Accepted"
+                          "value" : "Accept offer"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -914,6 +908,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "offer.isAccepted"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "9f563a93-a8af-4ef4-b97e-7ca8cbdfc499",

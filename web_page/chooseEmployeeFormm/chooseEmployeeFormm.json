@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "id" : "hrBossDecisionForm",
-  "name" : "hrBossDecisionForm",
-  "lastUpdate" : 1672180716165,
+  "id" : "chooseEmployeeFormm",
+  "name" : "chooseEmployeeFormm",
+  "lastUpdate" : 1672180419565,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "e844aa44-220d-452d-a143-5cf7375ad826",
+        "reference" : "8b135d60-2e22-47c7-8035-35aef3863f43",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "cc76e572-2a9f-4590-a1ff-590caf164b23",
+              "reference" : "8b6ccb50-3a52-4311-9b90-bc3770daeb3a",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "3f313294-233e-4e60-912f-72900987ef3f",
+              "reference" : "37d54052-c85e-45eb-9487-ea7a3ac7ec6b",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c63407e6-d061-46ba-a42a-31d5565aa8fa",
+        "reference" : "02f0219c-0d2b-41d7-8b01-e94e4dfd5497",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "f1c7a8cc-0c66-484a-9a1e-8fb72a88d5bd",
+          "reference" : "79383b1f-a451-4d5e-bb2a-7f27946948f0",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "85430a63-6c21-447f-8f1d-4288778f10de",
+                "reference" : "97fc6186-781a-4a86-862b-2f104c8ae1c9",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e5dc3ea4-c983-4fee-bf82-7ec17656d3cc",
+                "reference" : "0a4e5037-bc74-4f34-ba96-e0d4a249b518",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -241,7 +241,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "19ad087b-084a-4e5c-96e8-d92a5b4414b8",
+                      "reference" : "8bb5aa8e-140b-4428-bb8c-b29c1fb086b1",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -251,31 +251,39 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!employmentPackage.budgetLimit"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Budget Limit"
+                          "value" : "Budget"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -284,16 +292,11 @@
                         "alignment" : {
                           "type" : "constant",
                           "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
                         }
                       },
-                      "reference" : "a2d6b291-7db6-4531-9d52-4d74ae1d6574",
+                      "reference" : "2bbd3490-2a3f-416a-98ef-18f926f1a6b3",
                       "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
+                      "id" : "pbText"
                     }
                   ],
                   [
@@ -329,9 +332,13 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "c7203ff1-ea9e-4399-b43a-c2a81f878572",
+                      "reference" : "9ad355b2-2700-45db-9ac8-68ac4b6f63ab",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -364,7 +371,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "99bac317-cc6f-43ea-b9d4-2dbe2b384a08",
+                      "reference" : "40f38478-c09b-4fab-aa5c-1b8ad692c17d",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -411,7 +418,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "d83a6c19-0235-4639-bb6a-bafd9292dd37",
+                            "reference" : "a65b52a7-4ffd-44ea-83e2-b11406687e05",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -460,7 +467,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "c845fcf8-6aab-40a3-a778-3625c80a038c",
+                            "reference" : "b215aa14-33e5-423c-8258-fa129dec89f5",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -509,7 +516,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "0ab05c12-c6a2-4800-9328-3fc4ad939555",
+                            "reference" : "3df4618d-0c86-4f9f-80d3-43adedbda2ee",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -558,197 +565,9 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "0c67cb79-8fcb-44ff-b7aa-71c8e35bfaed",
+                            "reference" : "f685ea37-0c06-48c2-a821-6a6d0ae35d5a",
                             "hasValidationError" : false,
                             "id" : "pbText",
-                            "description" : ""
-                          }
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Employment Package Offer"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "a419932a-7e68-42ee-9a3d-41b75705ab2a",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "49184873-5dc7-4cf4-97d5-bac015bddfc2",
-                      "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!employmentPackage_employmentPackageOffer.employeeNumber"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Employee Number"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{employmentPackage_employmentPackageOffer.employeeNumber}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              }
-                            },
-                            "reference" : "86417174-18f5-4abb-aaf0-fc60f5321e4c",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "disabled" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Accept shortage"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "employmentPackage_employmentPackageOffer.isAccepted"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : false
-                              }
-                            },
-                            "reference" : "26a248ed-bd41-40d7-9039-8d7395699711",
-                            "hasValidationError" : false,
-                            "id" : "pbCheckbox",
                             "description" : ""
                           }
                         ]
@@ -756,6 +575,78 @@
                     }
                   ]
                 ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Select employee"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "Employees"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "userName"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "id"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "chosenEmployeeId"
+                  }
+                },
+                "reference" : "dd2790b5-fd17-4c0d-9350-47464ecc2529",
+                "hasValidationError" : false,
+                "id" : "pbSelect"
               }
             ],
             [
@@ -833,7 +724,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "68749607-ce0e-4ac8-bf19-46a5595288c4",
+                "reference" : "5d201f11-09a4-4885-ba66-035da79528f2",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -885,7 +776,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "59511f5e-dec7-4229-8cfb-e255abec9756",
+                "reference" : "6c08b9f3-3fbe-4b16-9401-c6c04aaa38a2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -898,16 +789,16 @@
   ],
   "assets" : [
     {
-      "id" : "fe2e50cb-2407-497c-bebd-9d4f1aaf3c6e",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "d2566c15-8f07-43ce-acd5-5b07ed4a47be",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b1c20053-6b92-4364-9b95-75c791a48fea",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "563bbcd7-cdf8-4637-b251-ca475dcca9d3",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
@@ -918,6 +809,15 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"chosenEmployeeId\" : 0\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -953,10 +853,9 @@
         "\treturn {",
         "\t\t//map employmentPackage variable to expected task contract input",
         "\t\temploymentPackageInput: {",
-        "\t\t\temploymentPackageOffer: $data.employmentPackage.employmentPackageOffer ? {",
-        "\t\t\t\tisAccepted: $data.employmentPackage.employmentPackageOffer.isAccepted !== undefined ? $data.employmentPackage.employmentPackageOffer.isAccepted : null",
-        "\t\t\t} : null",
-        "\t\t}",
+        "\t\t\tbudgetLimit: $data.employmentPackage.budgetLimit !== undefined ? $data.employmentPackage.budgetLimit : null",
+        "\t\t},",
+        "\t\tchosenEmployeeId: $data.chosenEmployeeId",
         "\t}",
         "}"
       ],
@@ -989,10 +888,28 @@
         "{{employmentPackage|lazyRef:'employmentPackageOffer'}}"
       ],
       "exposed" : false
+    },
+    "Employees" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=10&f=manager_id={{loggedInUser.user_id}}"
+      ],
+      "exposed" : false
+    },
+    "loggedInUser" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
+      ],
+      "exposed" : false
+    },
+    "chosenEmployeeId" : {
+      "type" : "constant",
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "ddb51f90-6c9a-4611-80a7-c48568d3a400",
+  "uuid" : "62012028-1a0d-4c07-9497-ab36e1b5a9d8",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

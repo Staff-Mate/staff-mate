@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "PayEmploymentForm1",
   "name" : "PayEmploymentForm",
-  "lastUpdate" : 1672067954165,
+  "lastUpdate" : 1672180217415,
   "rows" : [
     [
       {
@@ -332,7 +332,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "User Ids"
+                          "value" : "Information about employees"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -379,7 +379,8 @@
                           "type" : "constant",
                           "value" : [
                             "Id",
-                            "Username"
+                            "Username",
+                            "Position"
                           ]
                         },
                         "type" : {
@@ -401,7 +402,8 @@
                           "type" : "constant",
                           "value" : [
                             "id",
-                            "userName"
+                            "userName",
+                            "job_title"
                           ]
                         },
                         "sortColumns" : {
@@ -433,59 +435,6 @@
                       "reference" : "2c66cfb5-76cd-4a44-ac6d-de1ebea1ef28",
                       "hasValidationError" : false,
                       "id" : "pbDataTable"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Is Accepted"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "offer.isAccepted"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "9ab01ba8-25c9-446a-8ee2-cdef9f2cd00d",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
                     }
                   ]
                 ]
@@ -564,6 +513,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "6ce1836d-14ca-4b33-b08b-4878ed5b48dc",

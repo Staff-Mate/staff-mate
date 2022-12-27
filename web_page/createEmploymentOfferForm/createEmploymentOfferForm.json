@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "createEmploymentOfferForm",
   "name" : "createEmploymentOfferForm",
-  "lastUpdate" : 1671940833322,
+  "lastUpdate" : 1672179926526,
   "rows" : [
     [
       {
@@ -1041,56 +1041,17 @@
                   {
                     "type" : "component",
                     "dimension" : {
-                      "md" : 12,
-                      "sm" : 12,
                       "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
                       "lg" : 12
                     },
                     "propertyValues" : {
-                      "labelHidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "labelPosition" : {
-                        "type" : "constant",
-                        "value" : "top"
-                      },
                       "cssClasses" : {
                         "type" : "constant",
                         "value" : ""
                       },
-                      "labelWidth" : {
-                        "type" : "constant",
-                        "value" : 1
-                      },
-                      "readOnly" : {
-                        "type" : "constant",
-                        "value" : true
-                      },
-                      "label" : {
-                        "type" : "interpolation",
-                        "value" : "Budget Limit"
-                      },
-                      "placeholder" : {
-                        "type" : "constant"
-                      },
-                      "type" : {
-                        "type" : "constant",
-                        "value" : "number"
-                      },
-                      "dimension" : {
-                        "type" : "constant",
-                        "value" : 12
-                      },
-                      "value" : {
-                        "type" : "variable",
-                        "value" : "employmentPackage.budgetLimit"
-                      },
-                      "required" : {
+                      "hidden" : {
                         "type" : "constant",
                         "value" : false
                       },
@@ -1098,29 +1059,34 @@
                         "type" : "constant",
                         "value" : false
                       },
-                      "minLength" : {
+                      "labelHidden" : {
                         "type" : "constant",
-                        "value" : ""
+                        "value" : false
                       },
-                      "maxLength" : {
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Budget Limit"
+                      },
+                      "labelPosition" : {
                         "type" : "constant",
-                        "value" : ""
+                        "value" : "top"
                       },
-                      "min" : {
-                        "type" : "constant"
-                      },
-                      "max" : {
-                        "type" : "constant"
-                      },
-                      "step" : {
+                      "labelWidth" : {
                         "type" : "constant",
-                        "value" : 1
+                        "value" : 4
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "{{employmentPackage.budgetLimit}}"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
                       }
                     },
-                    "reference" : "de2d9351-1410-4c69-906a-69115cc88226",
+                    "reference" : "18917c25-e8b7-4f5b-b8c3-a3b12b622cdd",
                     "hasValidationError" : false,
-                    "id" : "pbInput",
-                    "description" : ""
+                    "id" : "pbText"
                   }
                 ],
                 [
