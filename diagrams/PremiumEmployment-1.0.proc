@@ -777,8 +777,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_GuZNYHO8Ee2vxNtY-8h9rA" name="Company HR Boss" actor="_CvGZMHOvEe2vxNtY-8h9rA">
         <elements xmi:type="process:Task" xmi:id="_EiI8wHOyEe2vxNtY-8h9rA" name="Choose interview team (Company HR Boss)" outgoing="_hJySoHOyEe2vxNtY-8h9rA" incoming="_DdN8EHOyEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_DdJDknOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_DdJDkXOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_DdJDknOyEe2vxNtY-8h9rA" name="Create Interview Team" content="Create Interview Team" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_DdJDkXOyEe2vxNtY-8h9rA" name="Please choose employees who will be interviewing candidate." content="Please choose employees who will be interviewing candidate." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_DdJDk3OyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_WzdDoIVbEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_WzdDoYVbEe2vRtqQly5P0w" name="interviewerIds" content="interviewerIds" type="TYPE_VARIABLE" returnType="java.util.List">
@@ -958,6 +958,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_oIppIIVAEe2XGcS64ODCIQ" name="selectedEmployeeId" type="INTEGER">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_oIppIYVAEe2XGcS64ODCIQ"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_xFWfgIYeEe2k_M817WFncw" expression="return selectedEmployeeId != null;" errorMessage="Employee is not chosen. Please choose one." name="checkSelectedEmployeeId">
+              <inputNames>selectedEmployeeId</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_QGnXdXOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -989,7 +992,7 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_c8XioIVbEe2vRtqQly5P0w" name="employeeId" type="INTEGER">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_c8XioYVbEe2vRtqQly5P0w"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_deMggIVfEe2vRtqQly5P0w" expression="if (employeeId &lt;= 0 || employeeId == null) {&#xD;&#xA;&#x9;return false&#xD;&#xA;} else {&#xD;&#xA;&#x9;return true&#xD;&#xA;}&#xD;&#xA;" errorMessage="You have to select an employee" name="employeeIdCheck">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_deMggIVfEe2vRtqQly5P0w" expression="if (employeeId &lt;= 0 || employeeId == null) {&#xD;&#xA;&#x9;return false&#xD;&#xA;} else {&#xD;&#xA;&#x9;return true&#xD;&#xA;}&#xD;&#xA;" errorMessage="You have to select an employee." name="employeeIdCheck">
               <inputNames>employeeId</inputNames>
             </constraints>
           </contract>
@@ -1172,7 +1175,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_kCf2kYYFEe2UWdC9m4PnqA" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_rZ0U5HOuEe2vxNtY-8h9rA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_lbtyoIYNEe2k_M817WFncw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Ynnv4IYfEe2k_M817WFncw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_rZ0U5nOuEe2vxNtY-8h9rA">
         <targetForm xmi:type="expression:Expression" xmi:id="_rZ0U53OuEe2vxNtY-8h9rA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "selectInterviewDatesForm",
   "name" : "selectInterviewDatesForm",
-  "lastUpdate" : 1672094074320,
+  "lastUpdate" : 1672172080552,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "39d8e250-8b2c-41f7-bd7a-6286c679e05a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -212,7 +221,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Date and time"
+                    "value" : "Date and time option 1"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -308,7 +317,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Date and time"
+                    "value" : "Date and time option 2"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -404,7 +413,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Date and time"
+                    "value" : "Date and time option 3"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -458,6 +467,214 @@
                 "reference" : "d2a8dd04-3b9d-4492-abfa-f09826d72033",
                 "hasValidationError" : false,
                 "id" : "pbDateTimePicker"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "text-danger bg-danger"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "error === \"\""
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{error}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "e91b2506-a62a-45e2-a58b-f350eb750d01",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "text-danger bg-danger"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "errorSame == \"\""
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{errorSame}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "5e768575-4a62-4684-a497-17d6b20a2d15",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{selectedDate1}}\n{{selectedDate2}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "41321bc8-5498-4d62-82b9-73fa4e83eca3",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{fff}}{{ffff}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "1a86775d-bff6-4177-ac13-c189ecf4cdd3",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [
@@ -524,7 +741,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || !selectedDate1 || !selectedDate2 || !selectedDate3"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -533,6 +750,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "b624dc3d-7c92-4705-9891-a32d90e9b733",
@@ -684,6 +922,48 @@
     },
     "selectedDate3" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "error" : {
+      "type" : "expression",
+      "value" : [
+        "if(new Date($data.selectedDate1) < new Date() || new Date($data.selectedDate2) < new Date() || new Date($data.selectedDate3) < new Date()){",
+        "    return \"Selected date can not be in past.\"",
+        "}",
+        "",
+        "return \"\""
+      ],
+      "exposed" : false
+    },
+    "fff" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.selectedDate1"
+      ],
+      "exposed" : false
+    },
+    "ffff" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.selectedDate2"
+      ],
+      "exposed" : false
+    },
+    "errorSame" : {
+      "type" : "expression",
+      "value" : [
+        "let nullCount = 0",
+        "nullCount = nullCount + $data.selectedDate1 == null ? 1 : 0",
+        "nullCount = nullCount + $data.selectedDate2 == null ? 1 : 0",
+        "nullCount = nullCount + $data.selectedDate3 == null ? 1 : 0",
+        "if(nullCount <1){",
+        "if($data.selectedDate1 == $data.selectedDate2 || $data.selectedDate1 == $data.selectedDate3 || $data.selectedDate3 == $data.selectedDate2){",
+        "    return \"You cannot choose same dates.\"",
+        "}",
+        "}",
+        "",
+        "return \"\""
+      ],
       "exposed" : false
     }
   },

@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "SelectEmployeeForm",
   "name" : "SelectEmployeeForm",
-  "lastUpdate" : 1672166091940,
+  "lastUpdate" : 1672170496797,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "0569a8eb-c933-486c-b8cc-96fa24f8b956",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -195,7 +204,8 @@
                       "Id",
                       "First Name",
                       "Last Name",
-                      "Username"
+                      "Username",
+                      "Position"
                     ]
                   },
                   "type" : {
@@ -219,7 +229,8 @@
                       "id",
                       "firstname",
                       "lastname",
-                      "userName"
+                      "userName",
+                      "job_title"
                     ]
                   },
                   "sortColumns" : {
@@ -552,13 +563,6 @@
       "type" : "urlparameter",
       "value" : [
         "id"
-      ],
-      "exposed" : false
-    },
-    "test" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.test_ref.link}}"
       ],
       "exposed" : false
     },

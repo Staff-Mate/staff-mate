@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "SelectCompaniesForm",
   "name" : "SelectCompaniesForm",
-  "lastUpdate" : 1672166307555,
+  "lastUpdate" : 1672170747108,
   "rows" : [
     [
       {
@@ -347,6 +347,58 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "text-danger bg-danger"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "error == \"\""
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{error}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "d2d58b6a-8d32-43c2-8753-c21a0b673f64",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -598,6 +650,17 @@
     },
     "selectedCompany3" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "error" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.selectedCompany1 != null && $data.selectedCompany3 != null && $data.selectedCompany3 != null){",
+        "if($data.selectedCompany1 === $data.selectedCompany2 || $data.selectedCompany1 === $data.selectedCompany3 || $data.selectedCompany3 === $data.selectedCompany2){",
+        "    return \"You cannot choose the same company multiple times or less than three companies.\"",
+        "}}",
+        "return \"\""
+      ],
       "exposed" : false
     }
   },

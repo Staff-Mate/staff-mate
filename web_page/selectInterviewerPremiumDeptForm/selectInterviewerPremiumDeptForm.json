@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "selectInterviewerPremiumDeptForm",
   "name" : "selectInterviewerPremiumDeptForm",
-  "lastUpdate" : 1672088868810,
+  "lastUpdate" : 1672169730966,
   "rows" : [
     [
       {
@@ -145,6 +145,132 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Candidate Information"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "8ddced8d-8846-48fb-8bc0-099ca73038ab",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "headers" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Id",
+                      "Name",
+                      "Surname",
+                      "Position"
+                    ]
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Variable"
+                  },
+                  "apiUrl" : {
+                    "type" : "constant",
+                    "value" : "../API/"
+                  },
+                  "params" : {
+                    "type" : "constant"
+                  },
+                  "content" : {
+                    "type" : "constant",
+                    "value" : "[user]"
+                  },
+                  "columnsKey" : {
+                    "type" : "constant",
+                    "value" : [
+                      "id",
+                      "firstname",
+                      "lastname",
+                      "job_title"
+                    ]
+                  },
+                  "sortColumns" : {
+                    "type" : "constant"
+                  },
+                  "selectedRow" : {
+                    "type" : "variable"
+                  },
+                  "pageSize" : {
+                    "type" : "constant",
+                    "value" : 10
+                  },
+                  "filter" : {
+                    "type" : "constant"
+                  },
+                  "striped" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "condensed" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "bordered" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "85489b70-c087-4511-9641-370fc140e379",
+                "hasValidationError" : false,
+                "id" : "pbDataTable"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "disabled" : {
                     "type" : "constant",
                     "value" : false
@@ -263,7 +389,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || !selectedEmployee"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -446,6 +572,20 @@
     },
     "selectedEmployee" : {
       "type" : "constant",
+      "exposed" : false
+    },
+    "case" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{task.caseId}}"
+      ],
+      "exposed" : false
+    },
+    "user" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{case.started_by}}?d=professional_data"
+      ],
       "exposed" : false
     }
   },
