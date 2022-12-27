@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "selectInterviewersHRBossForm",
   "name" : "selectInterviewersHRBossForm",
-  "lastUpdate" : 1672171387286,
+  "lastUpdate" : 1672177974521,
   "rows" : [
     [
       {
@@ -219,7 +219,7 @@
                     "type" : "constant"
                   },
                   "content" : {
-                    "type" : "constant",
+                    "type" : "expression",
                     "value" : "[user]"
                   },
                   "columnsKey" : {

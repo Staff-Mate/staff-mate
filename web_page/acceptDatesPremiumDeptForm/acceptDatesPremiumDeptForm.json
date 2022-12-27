@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "acceptDatesPremiumDeptForm",
   "name" : "acceptDatesPremiumDeptForm",
-  "lastUpdate" : 1672094879429,
+  "lastUpdate" : 1672176406339,
   "rows" : [
     [
       {
@@ -231,6 +231,10 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "62999a39-b42c-4d1c-b65f-cfd7fe740ebd",

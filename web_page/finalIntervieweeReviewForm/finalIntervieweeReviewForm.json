@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "finalIntervieweeReviewForm",
   "name" : "finalIntervieweeReviewForm",
-  "lastUpdate" : 1672162156657,
+  "lastUpdate" : 1672178018834,
   "rows" : [
     [
       {
@@ -131,6 +131,94 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "headers" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Id",
+                      "First Name",
+                      "Last Name",
+                      "Username",
+                      "Position"
+                    ]
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Variable"
+                  },
+                  "apiUrl" : {
+                    "type" : "constant",
+                    "value" : "../API/"
+                  },
+                  "params" : {
+                    "type" : "constant"
+                  },
+                  "content" : {
+                    "type" : "expression",
+                    "value" : "[user]"
+                  },
+                  "columnsKey" : {
+                    "type" : "constant",
+                    "value" : [
+                      "id",
+                      "firstname",
+                      "lastname",
+                      "userName",
+                      "job_title"
+                    ]
+                  },
+                  "sortColumns" : {
+                    "type" : "constant"
+                  },
+                  "selectedRow" : {
+                    "type" : "variable"
+                  },
+                  "pageSize" : {
+                    "type" : "constant",
+                    "value" : 10
+                  },
+                  "filter" : {
+                    "type" : "constant"
+                  },
+                  "striped" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "condensed" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "bordered" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "e016cf43-93eb-41d2-a7f8-2581cf61679d",
+                "hasValidationError" : false,
+                "id" : "pbDataTable"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -155,7 +243,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Is Accepted Finally"
+                    "value" : "Hire candidate"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -164,6 +252,14 @@
                   "value" : {
                     "type" : "variable",
                     "value" : "formInput.isAcceptedFinally"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "b975da18-bcfe-4ea8-8991-37c7578efbd9",
@@ -379,6 +475,20 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "case" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{task.caseId}}"
+      ],
+      "exposed" : false
+    },
+    "user" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{case.started_by}}?d=professional_data"
       ],
       "exposed" : false
     }

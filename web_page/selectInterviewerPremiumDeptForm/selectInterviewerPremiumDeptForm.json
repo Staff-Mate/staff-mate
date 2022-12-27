@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "selectInterviewerPremiumDeptForm",
   "name" : "selectInterviewerPremiumDeptForm",
-  "lastUpdate" : 1672169730966,
+  "lastUpdate" : 1672178164970,
   "rows" : [
     [
       {
@@ -210,7 +210,7 @@
                     "type" : "constant"
                   },
                   "content" : {
-                    "type" : "constant",
+                    "type" : "expression",
                     "value" : "[user]"
                   },
                   "columnsKey" : {

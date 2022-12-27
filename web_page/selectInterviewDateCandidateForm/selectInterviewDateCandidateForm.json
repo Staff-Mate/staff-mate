@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "selectInterviewDateCandidateForm",
   "name" : "selectInterviewDateCandidateForm",
-  "lastUpdate" : 1672102958580,
+  "lastUpdate" : 1672178749387,
   "rows" : [
     [
       {
@@ -146,47 +146,6 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Interview Options"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "817a0bd9-d2c9-42a5-89a4-e740a9e0c7ca",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
                   "allowHtml" : {
                     "type" : "constant",
                     "value" : true
@@ -253,8 +212,8 @@
                     "value" : ""
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "!interviewOptions.isAccepted"
                   },
                   "disabled" : {
                     "type" : "constant",
@@ -274,7 +233,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Select"
+                    "value" : "Select date which suits you best"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -338,7 +297,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Is Accepted"
+                    "value" : "Accept Interview"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -427,7 +386,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || (interviewOptions.isAccepted && selectedDate == null)"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -436,6 +395,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "494b3a2b-a0c3-4686-9d16-47927361411b",

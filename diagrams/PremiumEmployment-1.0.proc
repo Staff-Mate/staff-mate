@@ -123,7 +123,7 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_k-KOF3OwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_zAT6MHOwEe2vxNtY-8h9rA" name="Improve CV and cover letter" outgoing="_35z_wHOwEe2vxNtY-8h9rA" incoming="_xBZWcHOwEe2vxNtY-8h9rA _BsmvgHOxEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBT24nOwEe2vxNtY-8h9rA" name="Improvove CV and Cover Letter" content="Improvove CV and Cover Letter" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBT24nOwEe2vxNtY-8h9rA" name="Improve CV and Cover Letter" content="Improve CV and Cover Letter" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xBT24XOwEe2vxNtY-8h9rA" name="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." content="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xBT243OwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_w3BrcIYlEe2jjo5PuZoz6Q">
@@ -181,8 +181,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_oam_c3OzEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_KWPXcHO0Ee2vxNtY-8h9rA" name="Choose date" outgoing="_1v1esHO0Ee2vxNtY-8h9rA" incoming="_KDT0YHO0Ee2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_KDQxEXO0Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_KDQxEHO0Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_KDQxEXO0Ee2vxNtY-8h9rA" name="Choose interview date" content="Choose interview date" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_KDQxEHO0Ee2vxNtY-8h9rA" name="Please select one of offered dates witch is most convenient for you. If not one date suits you, you can decline the ineterview." content="Please select one of offered dates witch is most convenient for you. If not one date suits you, you can decline the ineterview." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KDQxEnO0Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_wZCY4IVqEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_wZCY4YVqEe2vRtqQly5P0w" name="interviewOptions" content="interviewOptions" type="TYPE_VARIABLE" returnType="com.company.model.InterviewOptions">
@@ -862,8 +862,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_5Bdt4HO8Ee2vxNtY-8h9rA" name="Interviewers Lane" actor="_xlymgHO8Ee2vxNtY-8h9rA">
         <elements xmi:type="process:Task" xmi:id="_ovaYgHO4Ee2vxNtY-8h9rA" name="Fill Interview Review" outgoing="_YkKR4HO4Ee2vxNtY-8h9rA" incoming="_flpegIYKEe2k_M817WFncw" type="PARALLEL" collectionDataToMultiInstantiate="_17UwAIVaEe2vRtqQly5P0w" outputData="_ubj8IIYFEe2UWdC9m4PnqA" listDataContainingOutputResults="_kCf2kIYFEe2UWdC9m4PnqA" storeOutput="true" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_nMyPgnO1Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_nMyPgXO1Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_nMyPgnO1Ee2vxNtY-8h9rA" name="Fill Review Form" content="Fill Review Form" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_nMyPgXO1Ee2vxNtY-8h9rA" name="Please fill this form after interview with candidate." content="Please fill this form after interview with candidate." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_nMyPg3O1Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <data xmi:type="process:JavaObjectData" xmi:id="_ubj8IIYFEe2UWdC9m4PnqA" name="interviewReview" dataType="_rZ0VAnOuEe2vxNtY-8h9rA" className="com.company.model.IntervieweeReview">
             <defaultValue xmi:type="expression:Expression" xmi:id="_ubj8IYYFEe2UWdC9m4PnqA" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.IntervieweeReview"/>
@@ -926,6 +926,15 @@
                 <mapping xmi:type="process:ContractInputMapping" xmi:id="_4c2a4YYFEe2UWdC9m4PnqA"/>
               </inputs>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Ix2WwIYvEe2k_M817WFncw" expression="return reviewInput?.personalAssessment != null;" name="personalAssesmentMandatory">
+              <inputNames>reviewInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Mhf4UIYvEe2k_M817WFncw" expression="return reviewInput?.impression != null;" name="impressionMandatory">
+              <inputNames>reviewInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_QcK-IIYvEe2k_M817WFncw" expression="return reviewInput?.rating > 0 &amp;&amp; reviewInput?.rating &lt;= 5;" name="ratingMandatory">
+              <inputNames>reviewInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ovaYjHO4Ee2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -938,7 +947,7 @@
       <elements xmi:type="process:Lane" xmi:id="_GuZNYHO8Ee2vxNtY-8h9rA" name="Company HR Boss" actor="_CvGZMHOvEe2vxNtY-8h9rA">
         <elements xmi:type="process:Task" xmi:id="_EiI8wHOyEe2vxNtY-8h9rA" name="Choose interview team (Company HR Boss)" outgoing="_hJySoHOyEe2vxNtY-8h9rA" incoming="_DdN8EHOyEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_DdJDknOyEe2vxNtY-8h9rA" name="Create Interview Team" content="Create Interview Team" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_DdJDkXOyEe2vxNtY-8h9rA" name="Please choose employees who will be interviewing candidate." content="Please choose employees who will be interviewing candidate." returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_DdJDkXOyEe2vxNtY-8h9rA" name="Please choose employees who will be interviewing the candidate." content="Please choose employees who will be interviewing the candidate." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_DdJDk3OyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_WzdDoIVbEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_WzdDoYVbEe2vRtqQly5P0w" name="interviewerIds" content="interviewerIds" type="TYPE_VARIABLE" returnType="java.util.List">
@@ -981,8 +990,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_hJuoQXOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_r6ussHOyEe2vxNtY-8h9rA" name="Choose dates" outgoing="_6_cCAHOyEe2vxNtY-8h9rA" incoming="_dH2U8HO3Ee2vxNtY-8h9rA" useCardinality="true" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_qJsz8XOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_qJsz8HOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_qJsz8XOyEe2vxNtY-8h9rA" name="Dates for interview" content="Dates for interview" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_qJsz8HOyEe2vxNtY-8h9rA" name="Select 3 potential dates for interview. These dates have to be approved by premium departmant boss of StaffMate." content="Select 3 potential dates for interview. These dates have to be approved by premium departmant boss of StaffMate." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qJsz8nOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_MEaX8oVkEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_MEaX84VkEe2vRtqQly5P0w" name="interviewOptions" content="interviewOptions" type="TYPE_VARIABLE" returnType="com.company.model.InterviewOptions">
@@ -1031,8 +1040,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_dHxccnO3Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_d4I3gHO5Ee2vxNtY-8h9rA" name="Company HR Boss Final Decision" outgoing="_aALbUIV8Ee22jcFl9eu8Dg" incoming="_dfu-kHO5Ee2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_dfqtIXO5Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_dfqtIHO5Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_dfqtIXO5Ee2vxNtY-8h9rA" name="Premium Employment Final Decision" content="Premium Employment Final Decision" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_dfqtIHO5Ee2vxNtY-8h9rA" name="This candidate has passed the interview phase, please make your final decision." content="This candidate has passed the interview phase, please make your final decision." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_dfqtInO5Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_1jpxcIYLEe2k_M817WFncw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_1jpxcYYLEe2k_M817WFncw" name="isCandidateApprovedByHRBoss" content="isCandidateApprovedByHRBoss" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
@@ -1125,8 +1134,8 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_QGnXdXOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_Uhq7kHOyEe2vxNtY-8h9rA" name="Choose interview team (PremiumDep Boss)" outgoing="_jwjgkHOyEe2vxNtY-8h9rA" incoming="_D2VmsHOyEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_D2QHIHOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_D2PgEXOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_D2QHIHOyEe2vxNtY-8h9rA" name="Create Interview Team" content="Create Interview Team" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_D2PgEXOyEe2vxNtY-8h9rA" name="Please choose employee who will be interviewing the candidate." content="Please choose employee who will be interviewing the candidate." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_D2QHIXOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_ZEXZgIVfEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_ZEXZgYVfEe2vRtqQly5P0w" name="interviewerIds" content="interviewerIds" type="TYPE_VARIABLE" returnType="java.util.List">
@@ -1159,8 +1168,8 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Uhq7nHOyEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_nlxpMHOzEe2vxNtY-8h9rA" name="Accept selected dates" outgoing="_oaqp0HOzEe2vxNtY-8h9rA" incoming="_6_cCAHOyEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_6_XwkXOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_6_XwkHOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_6_XwkXOyEe2vxNtY-8h9rA" name="Accept Potential Interview Dates" content="Accept Potential Interview Dates" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_6_XwkHOyEe2vxNtY-8h9rA" name="Please accept or decline protential dates for candidate interview." content="Please accept or decline protential dates for candidate interview." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_6_XwknOyEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_zrrRgIVuEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_zrrRgYVuEe2vRtqQly5P0w" name="interviewOptions" content="interviewOptions" type="TYPE_VARIABLE" returnType="com.company.model.InterviewOptions">
