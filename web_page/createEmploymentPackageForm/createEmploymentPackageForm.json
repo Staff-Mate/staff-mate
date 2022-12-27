@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "createEmploymentPackageForm",
   "name" : "createEmploymentPackageForm",
-  "lastUpdate" : 1671936881025,
+  "lastUpdate" : 1672159145613,
   "rows" : [
     [
       {
@@ -310,6 +310,28 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "2351bc55-82eb-47b8-b7f5-6f198f1e15f6",
@@ -374,6 +396,28 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "23dc3540-b40d-461f-bd82-01d51d28c944",
@@ -438,6 +482,28 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "a2e66ebd-1790-4be4-be32-28f85b6ba956",
@@ -502,6 +568,28 @@
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "1719b741-0b02-4b5d-a020-3463d31182b1",
@@ -605,8 +693,8 @@
                           "type" : "variable"
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : ""
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -650,8 +738,8 @@
                           "value" : "{\r\n  \"employeePosition\" : \"\",\r\n  \"experience\" : \"\",\r\n  \"education\" : \"\",\r\n  \"budget\" : 0\r\n}"
                         },
                         "disabled" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!isRightNumOfEmployees"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -759,7 +847,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || isRightNumOfEmployees || formInput.employmentPackageInput.employeeNumber==0"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -768,6 +856,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "a28d8cab-0aec-4ccb-ad0c-bc00aff6ac0f",
@@ -885,6 +994,13 @@
         "return {",
         "\temploymentPackageInput: $data.formInput.employmentPackageInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "isRightNumOfEmployees" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.formInput.employmentPackageInput.wantedEmployees.length < $data.formInput.employmentPackageInput.employeeNumber"
       ],
       "exposed" : false
     }
