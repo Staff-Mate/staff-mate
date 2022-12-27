@@ -141,15 +141,48 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBT24nOwEe2vxNtY-8h9rA" name="Improvove CV and Cover Letter" content="Improvove CV and Cover Letter" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xBT24XOwEe2vxNtY-8h9rA" name="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." content="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xBT243OwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_w3BrcIYlEe2jjo5PuZoz6Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_w3BrcYYlEe2jjo5PuZoz6Q" name="cvDocument" content="cvDocument" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_xMIYwIYlEe2jjo5PuZoz6Q" name="cvDocument"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_w3BrcoYlEe2jjo5PuZoz6Q" name="updateCV()" content="import org.bonitasoft.engine.bpm.contract.FileInputValue&#xD;&#xA;import org.bonitasoft.engine.bpm.document.Document&#xD;&#xA;import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;&#xD;&#xA;if(cv != null) {&#xD;&#xA;&#x9;return new DocumentValue(cv.getContent(), cv.getContentType(),cv.getFileName());&#xD;&#xA;} else {&#xD;&#xA;&#x9;Document currentDocument = apiAccessor.processAPI.getLastDocument(processInstanceId, &quot;cvDocument&quot;)&#xD;&#xA;&#xD;&#xA;&#x9;DocumentValue documentValue = new DocumentValue(currentDocument.getId());&#xD;&#xA;&#x9;return documentValue&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Fn5ncIYoEe2jjo5PuZoz6Q" name="cv" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_Fn5ncYYoEe2jjo5PuZoz6Q"/>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Fn5ncoYoEe2jjo5PuZoz6Q" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Fn5nc4YoEe2jjo5PuZoz6Q" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_w3Brc4YlEe2jjo5PuZoz6Q" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_xrpmUIYlEe2jjo5PuZoz6Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_xrpmUYYlEe2jjo5PuZoz6Q" name="coverLetterDocument" content="coverLetterDocument" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_yCZSYIYlEe2jjo5PuZoz6Q" name="coverLetterDocument"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_xrpmUoYlEe2jjo5PuZoz6Q" name="updateCoverLetter()" content="import org.bonitasoft.engine.bpm.contract.FileInputValue&#xD;&#xA;import org.bonitasoft.engine.bpm.document.Document&#xD;&#xA;import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;&#xD;&#xA;if(coverLetter != null) {&#xD;&#xA;&#x9;return new DocumentValue(coverLetter.getContent(), coverLetter.getContentType(),coverLetter.getFileName());&#xD;&#xA;} else {&#xD;&#xA;&#x9;Document currentDocument = apiAccessor.processAPI.getLastDocument(processInstanceId, &quot;coverLetterDocument&quot;)&#xD;&#xA;&#x9;DocumentValue documentValue = new DocumentValue(currentDocument.getId());&#xD;&#xA;&#x9;return documentValue&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Cn4d8IYmEe2jjo5PuZoz6Q" name="coverLetter" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_Cn4d8YYmEe2jjo5PuZoz6Q"/>
+              </referencedElements>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Cn4d8oYmEe2jjo5PuZoz6Q" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Cn4d84YmEe2jjo5PuZoz6Q" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_xrpmU4YlEe2jjo5PuZoz6Q" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_xBT25HOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_xBT25XOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_xBT25nOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_xBT26HOwEe2vxNtY-8h9rA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_xBT253OwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_zAT6OnOwEe2vxNtY-8h9rA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_zMhQIIVJEe2vRtqQly5P0w" name="uploadCVForPEForm" content="d25e22b6-5cb9-406b-8e7d-0b1281aa440c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_T6xiEIYmEe2jjo5PuZoz6Q" name="uploadCVandCoverLetterForm" content="193c1cee-ae86-4a9e-b7fd-17016e028003" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_zAT6OXOwEe2vxNtY-8h9rA"/>
+          <contract xmi:type="process:Contract" xmi:id="_zAT6OXOwEe2vxNtY-8h9rA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_unuiUIYlEe2jjo5PuZoz6Q" name="cv" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_unuiUYYlEe2jjo5PuZoz6Q"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_vcmU0IYlEe2jjo5PuZoz6Q" name="coverLetter" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_vcmU0YYlEe2jjo5PuZoz6Q"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_zAT6PHOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_Bsc-gHOxEe2vxNtY-8h9rA" name="ApproveCVAndCoverLetter" outgoing="_BsmvgHOxEe2vxNtY-8h9rA _A_y3YHOyEe2vxNtY-8h9rA" incoming="_61r7AHOwEe2vxNtY-8h9rA">
@@ -1175,7 +1208,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_kCf2kYYFEe2UWdC9m4PnqA" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_rZ0U5HOuEe2vxNtY-8h9rA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Ynnv4IYfEe2k_M817WFncw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_L9uWgIYnEe2jjo5PuZoz6Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_rZ0U5nOuEe2vxNtY-8h9rA">
         <targetForm xmi:type="expression:Expression" xmi:id="_rZ0U53OuEe2vxNtY-8h9rA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1384,6 +1417,16 @@
       <actors xmi:type="process:Actor" xmi:id="_t3zHQHO7Ee2vxNtY-8h9rA" name="ChosenPremiumDeptEmployee"/>
       <actors xmi:type="process:Actor" xmi:id="_xlymgHO8Ee2vxNtY-8h9rA" name="Interviewers"/>
       <contract xmi:type="process:Contract" xmi:id="_rZ0U7HOuEe2vxNtY-8h9rA"/>
+      <documents xmi:type="process:Document" xmi:id="_hPNpEIYlEe2jjo5PuZoz6Q" name="cvDocument" defaultValueIdOfDocumentStore="Upravljanje poslovnim procesima - 1.pdf" documentType="INTERNAL">
+        <mimeType xmi:type="expression:Expression" xmi:id="_hPNpEYYlEe2jjo5PuZoz6Q" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_hPNpEoYlEe2jjo5PuZoz6Q" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_hPNpE4YlEe2jjo5PuZoz6Q" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
+      <documents xmi:type="process:Document" xmi:id="_kq9-QIYlEe2jjo5PuZoz6Q" name="coverLetterDocument" defaultValueIdOfDocumentStore="Upravljanje poslovnim procesima - 3.pdf" documentType="INTERNAL">
+        <mimeType xmi:type="expression:Expression" xmi:id="_kq9-QYYlEe2jjo5PuZoz6Q" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_kq9-QoYlEe2jjo5PuZoz6Q" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_kq9-Q4YlEe2jjo5PuZoz6Q" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_rZ0U7XOuEe2vxNtY-8h9rA">
         <name xmi:type="expression:Expression" xmi:id="_rZ0U7nOuEe2vxNtY-8h9rA" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_rZ0U73OuEe2vxNtY-8h9rA" content="" returnTypeFixed="true"/>
@@ -1454,7 +1497,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_zAT6PXOwEe2vxNtY-8h9rA" type="3005" element="_zAT6MHOwEe2vxNtY-8h9rA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_zAT6P3OwEe2vxNtY-8h9rA" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zAT6PnOwEe2vxNtY-8h9rA" x="1220" y="118" width="138" height="69"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zAT6PnOwEe2vxNtY-8h9rA" x="1214" y="118" width="156" height="78"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_BsdlkXOxEe2vxNtY-8h9rA" type="3008" element="_Bsc-gHOxEe2vxNtY-8h9rA" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_BseMoHOxEe2vxNtY-8h9rA" type="5026">
