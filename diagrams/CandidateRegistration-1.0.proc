@@ -9,8 +9,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_vkgy9HJWEe2qsO_89MefBg" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_FADnEHMeEe258tE-WEVbvg" name="Upload CV and ..." outgoing="_uHt_EICfEe2Ix_x7AG-o8w" incoming="_R-d-QHMeEe258tE-WEVbvg" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_FADnEnMeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_FADnEXMeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_FADnEnMeEe258tE-WEVbvg" name="Uploat CV and Cover Letter" content="Uploat CV and Cover Letter" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_FADnEXMeEe258tE-WEVbvg" name="Please upload CV and Cover Letter. Out employees will look at these documents and help you find perfect job for you." content="Please upload CV and Cover Letter. Out employees will look at these documents and help you find perfect job for you." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FADnE3MeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
           <loopCondition xmi:type="expression:Expression" xmi:id="_FADnFHMeEe258tE-WEVbvg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_FADnFXMeEe258tE-WEVbvg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_FADnGHMeEe258tE-WEVbvg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_FADnF3MeEe258tE-WEVbvg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_FADnGnMeEe258tE-WEVbvg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_7AYJwIEyEe2u-oSsL9tVQg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ZmnDIIXcEe2H5r61aVJirQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_FADnGXMeEe258tE-WEVbvg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_FADnHHMeEe258tE-WEVbvg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -51,8 +51,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_UUx44HMfEe258tE-WEVbvg" name="Employee lane" actor="_9cRe0HMYEe258tE-WEVbvg">
         <elements xmi:type="process:Task" xmi:id="_6aWpMHJYEe2qsO_89MefBg" name="Review Registraton Request" outgoing="_PqyXUHMREe258tE-WEVbvg" incoming="_u93j8ICfEe2Ix_x7AG-o8w" type="PARALLEL" collectionDataToMultiInstantiate="_VcceEIEhEe2aRN2uyM3cXg" outputData="_yaNmMIEnEe2aRN2uyM3cXg" listDataContainingOutputResults="_5edsEIEnEe2aRN2uyM3cXg" storeOutput="true" actor="_9cRe0HMYEe258tE-WEVbvg">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_zeV5UnJYEe2qsO_89MefBg" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_zeV5UXJYEe2qsO_89MefBg" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_zeV5UnJYEe2qsO_89MefBg" name="Review Registration Request" content="Review Registration Request" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_zeV5UXJYEe2qsO_89MefBg" name="Please review new registration request. You have 7 days to make a decision otherwise, registration request will be declined. " content="Please review new registration request. You have 7 days to make a decision otherwise, registration request will be declined. " returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_zeV5U3JYEe2qsO_89MefBg" name="" content="" returnTypeFixed="true"/>
           <data xmi:type="process:Data" xmi:id="_yaNmMIEnEe2aRN2uyM3cXg" name="result" dataType="_vkhaFXJWEe2qsO_89MefBg">
             <defaultValue xmi:type="expression:Expression" xmi:id="_yaNmMYEnEe2aRN2uyM3cXg" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
@@ -154,7 +154,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_51kzAHMaEe258tE-WEVbvg" name="7 Days 00:00:00" content="604800000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_6aXQQXJYEe2qsO_89MefBg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_2_AbgIExEe2u-oSsL9tVQg" name="newForm1" content="e94bb22b-080b-4804-8f00-043ae316c08f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2_AbgIExEe2u-oSsL9tVQg" name="reviewRegistrationForm" content="e94bb22b-080b-4804-8f00-043ae316c08f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_G9xOAIEhEe2aRN2uyM3cXg" name="userId" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_G9x1EIEhEe2aRN2uyM3cXg" definitionId="bonita-actorfilter-single-user" version="1.0.0">
@@ -248,7 +248,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_-G064nMcEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_z_wSUHMeEe258tE-WEVbvg" name="Send Email about registration status" outgoing="_z_3AAHMeEe258tE-WEVbvg" incoming="_ZngNMHMTEe258tE-WEVbvg">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_z_w5YHMeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_z_w5YHMeEe258tE-WEVbvg" name="Send email about registration status" content="Send email about registration status" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_z_wSUXMeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_z_w5YXMeEe258tE-WEVbvg" name="" content="" returnTypeFixed="true"/>
           <connectors xmi:type="process:Connector" xmi:id="_1V0X8IC0Ee2Ix_x7AG-o8w" name="registrationEmail" definitionId="email" event="ON_FINISH" definitionVersion="1.2.0">
@@ -363,7 +363,7 @@
         <targetForm xmi:type="expression:Expression" xmi:id="_9WhL4ICcEe2Ix_x7AG-o8w" name="registrationForm" content="0e10b118-6352-449a-a2fe-0c2cdd7fadb7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_vkgzBHJWEe2qsO_89MefBg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_vkhaAHJWEe2qsO_89MefBg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_JEYZMIXXEe2H5r61aVJirQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_PqyXUHMREe258tE-WEVbvg" target="_CwQZkHMcEe258tE-WEVbvg" source="_6aWpMHJYEe2qsO_89MefBg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Pqy-YHMREe258tE-WEVbvg"/>
@@ -458,31 +458,40 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_YHNlOICzEe2Ix_x7AG-o8w" name="password"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_YHNlOYCzEe2Ix_x7AG-o8w" name="confirmPassword"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlOoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.name != null" errorMessage="name is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_name">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlOoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.name != null" errorMessage="Name is mandatory." name="mandatory_registrationFormInput_name">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlO4CzEe2Ix_x7AG-o8w" expression="registrationFormInput?.surname != null" errorMessage="surname is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_surname">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlO4CzEe2Ix_x7AG-o8w" expression="registrationFormInput?.surname != null" errorMessage="Surname is mandatory." name="mandatory_registrationFormInput_surname">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPICzEe2Ix_x7AG-o8w" expression="registrationFormInput?.username != null" errorMessage="username is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_username">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPICzEe2Ix_x7AG-o8w" expression="registrationFormInput?.username != null" errorMessage="Username is mandatory." name="mandatory_registrationFormInput_username">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPYCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.email != null" errorMessage="email is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_email">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPYCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.email != null" errorMessage="Email is mandatory." name="mandatory_registrationFormInput_email">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.phoneNumber != null" errorMessage="phoneNumber is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_phoneNumber">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlPoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.phoneNumber != null" errorMessage="Phone Number is mandatory." name="mandatory_registrationFormInput_phoneNumber">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlP4CzEe2Ix_x7AG-o8w" expression="registrationFormInput?.address != null" errorMessage="address is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_address">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlP4CzEe2Ix_x7AG-o8w" expression="registrationFormInput?.address != null" errorMessage="Address is mandatory." name="mandatory_registrationFormInput_address">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQICzEe2Ix_x7AG-o8w" expression="registrationFormInput?.education != null" errorMessage="education is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_education">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQICzEe2Ix_x7AG-o8w" expression="registrationFormInput?.education != null" errorMessage="Education is mandatory." name="mandatory_registrationFormInput_education">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQYCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.password != null" errorMessage="password is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_password">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQYCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.password != null" errorMessage="Password is mandatory." name="mandatory_registrationFormInput_password">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.confirmPassword != null" errorMessage="confirmPassword is mandatory for CandidateRegistrationRequest" name="mandatory_registrationFormInput_confirmPassword">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_YHNlQoCzEe2Ix_x7AG-o8w" expression="registrationFormInput?.confirmPassword != null" errorMessage="Confirm Password is mandatory." name="mandatory_registrationFormInput_confirmPassword">
+          <inputNames>registrationFormInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_wOd0EIXMEe2H5r61aVJirQ" expression="registrationFormInput?.password == registrationFormInput?.confirmPassword" errorMessage="Passwords does not match." name="checkPassword">
+          <inputNames>registrationFormInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_A_lLYIXOEe2H5r61aVJirQ" expression="def phoneNumberRegex=/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/&#xD;&#xA;return registrationFormInput?.phoneNumber ==~ phoneNumberRegex;" errorMessage="Phone Number must contain 10 number, you can use characteers(&quot;/.-()&quot;)." name="checkPhoneNumber">
+          <inputNames>registrationFormInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_zJsuwIXPEe2H5r61aVJirQ" expression="return registrationFormInput?.password.length() >= 8;" errorMessage="Password must contain at least 8 characters." name="checkPasswordLength">
           <inputNames>registrationFormInput</inputNames>
         </constraints>
       </contract>

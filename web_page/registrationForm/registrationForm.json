@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "registrationForm",
   "name" : "registrationForm",
-  "lastUpdate" : 1671564937577,
+  "lastUpdate" : 1672135415033,
   "rows" : [
     [
       {
@@ -10,7 +10,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "a836cb94-6ab7-499e-852c-b428c5889ea0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -52,11 +61,15 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "center"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "9cd01680-2cf4-40f4-b8a9-ceed64e8a3bb",
