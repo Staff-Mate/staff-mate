@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "SelectCompaniesForm",
   "name" : "SelectCompaniesForm",
-  "lastUpdate" : 1672077546040,
+  "lastUpdate" : 1672166307555,
   "rows" : [
     [
       {
@@ -407,7 +407,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || !selectedCompany1 || !selectedCompany2 || !selectedCompany3"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -416,6 +416,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "b26f3c3e-d451-413d-9e99-7749175991f9",

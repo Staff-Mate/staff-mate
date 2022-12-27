@@ -9,8 +9,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_rZ0U1nOuEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_rZ0U13OuEe2vxNtY-8h9rA" name="Accept Terms And Conditions" outgoing="_cCYbUHOvEe2vxNtY-8h9rA" incoming="_rZ0U6HOuEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_rZ0U2HOuEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_rZ0U2XOuEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_rZ0U2HOuEe2vxNtY-8h9rA" name="Terms &amp; Conditions" content="Terms &amp; Conditions" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_rZ0U2XOuEe2vxNtY-8h9rA" name="Before we proceed with premium employment process, please read our terms and conditions." content="Before we proceed with premium employment process, please read our terms and conditions." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_rZ0U2nOuEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_46rVgIU4Ee2xlJGGUNPD4A">
             <leftOperand xmi:type="expression:Expression" xmi:id="_46rVgYU4Ee2xlJGGUNPD4A" name="areTermsAccepted" content="areTermsAccepted" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
@@ -49,8 +49,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_k-gBwnOvEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_AAH1AHOwEe2vxNtY-8h9rA" name="Pay Premium Employment Services" outgoing="_PjrCcHOwEe2vxNtY-8h9rA" incoming="_mSeLEHOvEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_mSWPQXOvEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_mSWPQHOvEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_mSWPQXOvEe2vxNtY-8h9rA" name="Pay Premium Employment Service" content="Pay Premium Employment Service" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_mSWPQHOvEe2vxNtY-8h9rA" name="Please pay this service before continuing with employment process." content="Please pay this service before continuing with employment process." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_mSWPQnOvEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <loopCondition xmi:type="expression:Expression" xmi:id="_mSWPQ3OvEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_mSWPRHOvEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -138,8 +138,8 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_k-KOF3OwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_zAT6MHOwEe2vxNtY-8h9rA" name="Improve CV and cover letter" outgoing="_35z_wHOwEe2vxNtY-8h9rA" incoming="_xBZWcHOwEe2vxNtY-8h9rA _BsmvgHOxEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBT24nOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_xBT24XOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBT24nOwEe2vxNtY-8h9rA" name="Improvove CV and Cover Letter" content="Improvove CV and Cover Letter" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_xBT24XOwEe2vxNtY-8h9rA" name="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." content="Here you can review your own cv and cover letter, and also update them to be more suitable for job application you are looking for." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xBT243OwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <loopCondition xmi:type="expression:Expression" xmi:id="_xBT25HOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_xBT25XOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -487,7 +487,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_NhcgcXO6Ee2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_xjWtMIU5Ee2xlJGGUNPD4A" name="Set process initiator" outgoing="_xj9KIIU5Ee2xlJGGUNPD4A" incoming="_PjrCcHOwEe2vxNtY-8h9rA">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xjcz0YU5Ee2xlJGGUNPD4A" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xjcz0YU5Ee2xlJGGUNPD4A" name="Set process initiator" content="Set process initiator" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xjcz0IU5Ee2xlJGGUNPD4A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xjda4IU5Ee2xlJGGUNPD4A" name="" content="" returnTypeFixed="true"/>
           <loopCondition xmi:type="expression:Expression" xmi:id="_xjda4YU5Ee2xlJGGUNPD4A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -932,8 +932,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_DX6PMHO7Ee2vxNtY-8h9rA" name="PremiumDepartment Boss Lane" actor="_MEDf8HO7Ee2vxNtY-8h9rA">
         <elements xmi:type="process:Task" xmi:id="_QGmwYHOwEe2vxNtY-8h9rA" name="Choose Employee" outgoing="_ZVPqMHOwEe2vxNtY-8h9rA" incoming="_xj9KIIU5Ee2xlJGGUNPD4A" actor="_t3zHQHO7Ee2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_PjkUwnOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_PjkUwXOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_PjkUwnOwEe2vxNtY-8h9rA" name="Assign employee for premium employment process" content="Assign employee for premium employment process" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_PjkUwXOwEe2vxNtY-8h9rA" name="Please choose one of your employees to find 3 suitable companies for this premium employment process." content="Please choose one of your employees to find 3 suitable companies for this premium employment process." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_PjkUw3OwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_qGi5MIVAEe2XGcS64ODCIQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_qGi5MYVAEe2XGcS64ODCIQ" name="chosenPremiumDeptEmployeeId" content="chosenPremiumDeptEmployeeId" type="TYPE_VARIABLE" returnType="java.lang.Integer">
@@ -1054,8 +1054,8 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_01Tr8HO7Ee2vxNtY-8h9rA" name="ChosenPremiumDept Employee Lane" actor="_t3zHQHO7Ee2vxNtY-8h9rA">
         <elements xmi:type="process:Task" xmi:id="_Zu1O4HOwEe2vxNtY-8h9rA" name="Choose 3 companies" outgoing="_XuXkQHO2Ee2vxNtY-8h9rA" incoming="_ZVPqMHOwEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_ZVKKoXOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZVKKoHOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_ZVKKoXOwEe2vxNtY-8h9rA" name="Select 3 companies for premium employment" content="Select 3 companies for premium employment" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZVKKoHOwEe2vxNtY-8h9rA" name="Please 3 companies you recongnize as suitable for this candidate. Candidate will get a chance for interview for listed companies in order you select them." content="Please 3 companies you recongnize as suitable for this candidate. Candidate will get a chance for interview for listed companies in order you select them." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ZVKKonOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_DB9mMIVHEe2XGcS64ODCIQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_DB9mMYVHEe2XGcS64ODCIQ" name="listOfSelectedCompanies" content="listOfSelectedCompanies" type="TYPE_VARIABLE" returnType="java.util.List">
@@ -1096,8 +1096,8 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Zu1O7HOwEe2vxNtY-8h9rA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_4Pc4kHOwEe2vxNtY-8h9rA" name="Review CV and cover letter" outgoing="_61r7AHOwEe2vxNtY-8h9rA" incoming="_35z_wHOwEe2vxNtY-8h9rA" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_35vuUnOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_35vuUXOwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_35vuUnOwEe2vxNtY-8h9rA" name="Review Candidate CV and Cover Letter" content="Review Candidate CV and Cover Letter" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_35vuUXOwEe2vxNtY-8h9rA" name="To help your candidate to get employment in no time, review his cv and cover letter. If you find something odd and want candidate to improve it more, send it back to him by not approving it." content="To help your candidate to get employment in no time, review his cv and cover letter. If you find something odd and want candidate to improve it more, send it back to him by not approving it." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_35vuU3OwEe2vxNtY-8h9rA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_QTyhQIVKEe2vRtqQly5P0w">
             <leftOperand xmi:type="expression:Expression" xmi:id="_QTyhQYVKEe2vRtqQly5P0w" name="isCVAndCoverLetterApproved" content="isCVAndCoverLetterApproved" type="TYPE_VARIABLE" returnType="java.lang.Boolean">

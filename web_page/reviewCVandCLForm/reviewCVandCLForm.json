@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "reviewCVandCLForm",
   "name" : "reviewCVandCLForm",
-  "lastUpdate" : 1672078939956,
+  "lastUpdate" : 1672166579087,
   "rows" : [
     [
       {
@@ -155,7 +155,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Approve"
+                    "value" : "Approve candidate CV and Cover Letter"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -347,7 +347,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"isCVAndCLApproved\" : false\r",
+        "  \"isCVAndCLApproved\" : true\r",
         "}"
       ],
       "exposed" : false

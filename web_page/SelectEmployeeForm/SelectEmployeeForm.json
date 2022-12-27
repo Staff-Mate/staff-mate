@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "SelectEmployeeForm",
   "name" : "SelectEmployeeForm",
-  "lastUpdate" : 1672075126335,
+  "lastUpdate" : 1672166091940,
   "rows" : [
     [
       {
@@ -149,10 +149,52 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Information about candidate"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "f93193ac-7f00-4027-a8ef-41ba30f4b14e",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "headers" : {
                     "type" : "constant",
                     "value" : [
                       "Id",
+                      "First Name",
+                      "Last Name",
                       "Username"
                     ]
                   },
@@ -175,6 +217,8 @@
                     "type" : "constant",
                     "value" : [
                       "id",
+                      "firstname",
+                      "lastname",
                       "userName"
                     ]
                   },
@@ -245,7 +289,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Select"
+                    "value" : "Select emloyee"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -345,7 +389,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || !SelectedEmployee"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -354,6 +398,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "5f2dac09-61d8-4072-bfc7-be26cd4dd89c",
