@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "CVInputForm",
   "name" : "CVInputForm",
-  "lastUpdate" : 1672754306531,
+  "lastUpdate" : 1672755767682,
   "rows" : [
     [
       {
@@ -172,7 +172,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.cvInfo.generateDocuments"
+                    "value" : "formInput.generateDocuments"
                   }
                 },
                 "reference" : "a814db31-b942-44ed-915a-e839cef8cf8a",
@@ -196,7 +196,7 @@
                   },
                   "hidden" : {
                     "type" : "expression",
-                    "value" : "!formInput.cvInfo.generateDocuments"
+                    "value" : "!formInput.generateDocuments"
                   },
                   "repeatedCollection" : {
                     "type" : "variable"
@@ -336,7 +336,7 @@
                               },
                               "required" : {
                                 "type" : "expression",
-                                "value" : "formInput.cvInfo.generateDocuments"
+                                "value" : "formInput.generateDocuments"
                               },
                               "allowHTML" : {
                                 "type" : "constant",
@@ -448,7 +448,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -532,7 +532,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -618,7 +618,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -733,7 +733,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -817,7 +817,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -903,7 +903,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -987,7 +987,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -1073,7 +1073,7 @@
                                     },
                                     "required" : {
                                       "type" : "expression",
-                                      "value" : "formInput.cvInfo.generateDocuments"
+                                      "value" : "formInput.generateDocuments"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -1200,7 +1200,7 @@
                               },
                               "required" : {
                                 "type" : "expression",
-                                "value" : "formInput.cvInfo.generateDocuments"
+                                "value" : "formInput.generateDocuments"
                               },
                               "allowHTML" : {
                                 "type" : "constant",
