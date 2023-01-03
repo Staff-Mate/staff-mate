@@ -5,9 +5,12 @@
     <user userName="candidate1">
       <firstName>Candidate</firstName>
       <lastName>1</lastName>
+      <jobTitle>HR</jobTitle>
       <personalData/>
       <professionalData>
         <email>candidate1@gmail.com</email>
+        <phoneNumber>90234593</phoneNumber>
+        <address>2082 Clifford Street, San Leandro</address>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
@@ -92,9 +95,12 @@
     <user userName="candidate2">
       <firstName>Candidate</firstName>
       <lastName>2</lastName>
+      <jobTitle>Developer</jobTitle>
       <personalData/>
       <professionalData>
         <email>candidate2@gmail.com</email>
+        <phoneNumber>43456578</phoneNumber>
+        <address>636 Berkshire Circle, Knoxville</address>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
@@ -296,21 +302,34 @@
     <user userName="c1_ceo">
       <firstName>HTEC</firstName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c1_ceo@gmail.com</email>
+        <phoneNumber>65478345</phoneNumber>
+        <address>4747 Breezewood Court, Windom</address>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="c2_ceo">
       <firstName>Hybrid</firstName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c2_ceo@gmail.com</email>
+        <phoneNumber>21212121</phoneNumber>
+        <address>3579 Charmaine Lane, Lubbock</address>
+        <city></city>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="c3_ceo">
       <firstName>Levi9</firstName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>c3_ceo@gmail.com</email>
+        <phoneNumber>93948372</phoneNumber>
+        <address>879 Prudence Street, Detroit</address>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
