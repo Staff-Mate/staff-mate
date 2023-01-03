@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "CVInputForm",
   "name" : "CVInputForm",
-  "lastUpdate" : 1672755767682,
+  "lastUpdate" : 1672769594407,
   "rows" : [
     [
       {
@@ -291,48 +291,17 @@
                               "lg" : 12
                             },
                             "propertyValues" : {
-                              "labelHidden" : {
+                              "cssClasses" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : ""
                               },
                               "hidden" : {
                                 "type" : "constant",
                                 "value" : false
                               },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
                               "readOnly" : {
                                 "type" : "constant",
                                 "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Cv Summary"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "formInput.cvInfo.cvSummary"
                               },
                               "required" : {
                                 "type" : "expression",
@@ -350,21 +319,30 @@
                                 "type" : "constant",
                                 "value" : ""
                               },
-                              "min" : {
-                                "type" : "constant"
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
                               },
-                              "max" : {
-                                "type" : "constant"
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Cv Summary"
                               },
-                              "step" : {
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
                                 "type" : "constant",
                                 "value" : 1
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "formInput.cvInfo.cvSummary"
                               }
                             },
-                            "reference" : "d8372d5b-d317-48b2-9038-9c2c4d0496ea",
+                            "reference" : "8bf770b8-62bf-42ba-92ba-7a39242c71b9",
                             "hasValidationError" : false,
-                            "id" : "pbInput",
-                            "description" : ""
+                            "id" : "pbTextarea"
                           }
                         ],
                         [
@@ -547,10 +525,12 @@
                                       "value" : ""
                                     },
                                     "min" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 1950
                                     },
                                     "max" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 2023
                                     },
                                     "step" : {
                                       "type" : "constant",
@@ -573,48 +553,17 @@
                                     "lg" : 12
                                   },
                                   "propertyValues" : {
-                                    "labelHidden" : {
+                                    "cssClasses" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : ""
                                     },
                                     "hidden" : {
                                       "type" : "constant",
                                       "value" : false
                                     },
-                                    "labelPosition" : {
-                                      "type" : "constant",
-                                      "value" : "top"
-                                    },
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "labelWidth" : {
-                                      "type" : "constant",
-                                      "value" : 1
-                                    },
                                     "readOnly" : {
                                       "type" : "constant",
                                       "value" : false
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Education Description"
-                                    },
-                                    "placeholder" : {
-                                      "type" : "constant"
-                                    },
-                                    "type" : {
-                                      "type" : "constant",
-                                      "value" : "text"
-                                    },
-                                    "dimension" : {
-                                      "type" : "constant",
-                                      "value" : 12
-                                    },
-                                    "value" : {
-                                      "type" : "variable",
-                                      "value" : "formInput.cvInfo.educationDescription"
                                     },
                                     "required" : {
                                       "type" : "expression",
@@ -632,21 +581,30 @@
                                       "type" : "constant",
                                       "value" : ""
                                     },
-                                    "min" : {
-                                      "type" : "constant"
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
                                     },
-                                    "max" : {
-                                      "type" : "constant"
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Education Description"
                                     },
-                                    "step" : {
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
                                       "type" : "constant",
                                       "value" : 1
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "formInput.cvInfo.educationDescription"
                                     }
                                   },
-                                  "reference" : "adb68d4d-4b66-4896-a8e1-f8934d5f1e81",
+                                  "reference" : "91f42883-dfc1-4580-9c57-250791bace0f",
                                   "hasValidationError" : false,
-                                  "id" : "pbInput",
-                                  "description" : ""
+                                  "id" : "pbTextarea"
                                 }
                               ]
                             ]
@@ -884,7 +842,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Exp From"
+                                      "value" : "Worked From (Year)"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
@@ -918,10 +876,12 @@
                                       "value" : ""
                                     },
                                     "min" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 1950
                                     },
                                     "max" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 2023
                                     },
                                     "step" : {
                                       "type" : "constant",
@@ -968,7 +928,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Exp To"
+                                      "value" : "Worked Until (Year)"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
@@ -1002,10 +962,12 @@
                                       "value" : ""
                                     },
                                     "min" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 1950
                                     },
                                     "max" : {
-                                      "type" : "constant"
+                                      "type" : "constant",
+                                      "value" : 2023
                                     },
                                     "step" : {
                                       "type" : "constant",
@@ -1022,54 +984,75 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : "text-danger bg-danger"
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "formInput.cvInfo.expFrom <= formInput.cvInfo.expTo"
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Default label"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "text" : {
+                                      "type" : "interpolation",
+                                      "value" : "Year until you worked on this job can not be before you started to work there."
+                                    },
+                                    "alignment" : {
+                                      "type" : "constant",
+                                      "value" : "center"
+                                    }
+                                  },
+                                  "reference" : "1791baa1-eb61-43c1-8a7f-79d49f510da7",
+                                  "hasValidationError" : false,
+                                  "id" : "pbText"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
                                     "md" : 12,
                                     "sm" : 12,
                                     "xs" : 12,
                                     "lg" : 12
                                   },
                                   "propertyValues" : {
-                                    "labelHidden" : {
+                                    "cssClasses" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : ""
                                     },
                                     "hidden" : {
                                       "type" : "constant",
                                       "value" : false
                                     },
-                                    "labelPosition" : {
-                                      "type" : "constant",
-                                      "value" : "top"
-                                    },
-                                    "cssClasses" : {
-                                      "type" : "constant",
-                                      "value" : ""
-                                    },
-                                    "labelWidth" : {
-                                      "type" : "constant",
-                                      "value" : 1
-                                    },
                                     "readOnly" : {
                                       "type" : "constant",
                                       "value" : false
-                                    },
-                                    "label" : {
-                                      "type" : "interpolation",
-                                      "value" : "Job Description"
-                                    },
-                                    "placeholder" : {
-                                      "type" : "constant"
-                                    },
-                                    "type" : {
-                                      "type" : "constant",
-                                      "value" : "text"
-                                    },
-                                    "dimension" : {
-                                      "type" : "constant",
-                                      "value" : 12
-                                    },
-                                    "value" : {
-                                      "type" : "variable",
-                                      "value" : "formInput.cvInfo.jobDescription"
                                     },
                                     "required" : {
                                       "type" : "expression",
@@ -1087,21 +1070,30 @@
                                       "type" : "constant",
                                       "value" : ""
                                     },
-                                    "min" : {
-                                      "type" : "constant"
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
                                     },
-                                    "max" : {
-                                      "type" : "constant"
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Job Description"
                                     },
-                                    "step" : {
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
                                       "type" : "constant",
                                       "value" : 1
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "formInput.cvInfo.jobDescription"
                                     }
                                   },
-                                  "reference" : "6c519ea3-103a-47e6-b292-b22907ac0856",
+                                  "reference" : "ece8d0c9-bb45-4976-b323-0603b3591d34",
                                   "hasValidationError" : false,
-                                  "id" : "pbInput",
-                                  "description" : ""
+                                  "id" : "pbTextarea"
                                 }
                               ]
                             ]

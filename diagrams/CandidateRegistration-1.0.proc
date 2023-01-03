@@ -143,8 +143,8 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_VHOq9oYiEe2jjo5PuZoz6Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_2eVn8Iq0Ee2tQLw1YIs6QQ" name="generate CV" outgoing="_GceWAIttEe2FxOg-TrobJw" incoming="_W4nQYIYfEe2jjo5PuZoz6Q" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_pOgwoIq0Ee2tQLw1YIs6QQ" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_pOgJkIq0Ee2tQLw1YIs6QQ" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_pOgwoIq0Ee2tQLw1YIs6QQ" name="Generate CV" content="Generate CV" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_pOgJkIq0Ee2tQLw1YIs6QQ" name="Here you can generate new cv if you wish. If you have your cv already generated you can continue without filling out this form. In your next task you will have to upload your cv." content="Here you can generate new cv if you wish. If you have your cv already generated you can continue without filling out this form. In your next task you will have to upload your cv." returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pOgwoYq0Ee2tQLw1YIs6QQ" name="" content="" returnTypeFixed="true"/>
           <data xmi:type="process:JavaObjectData" xmi:id="_Lw8YAIq3Ee2tQLw1YIs6QQ" name="cvInfo" dataType="_vkhaG3JWEe2qsO_89MefBg" className="java.util.Map">
             <defaultValue xmi:type="expression:Expression" xmi:id="_Lw8YAYq3Ee2tQLw1YIs6QQ" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Map"/>
