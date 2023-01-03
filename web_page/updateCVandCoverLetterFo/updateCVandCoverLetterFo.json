@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "updateCVandCoverLetterFo",
   "name" : "updateCVandCoverLetterFo",
-  "lastUpdate" : 1672171011990,
+  "lastUpdate" : 1672755044618,
   "rows" : [
     [
       {
@@ -102,58 +102,6 @@
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Default label"
-                },
-                "labelPosition" : {
-                  "type" : "constant",
-                  "value" : "top"
-                },
-                "labelWidth" : {
-                  "type" : "constant",
-                  "value" : 4
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "Your registration request has been return to you, so you could update your CV and Cover Letter."
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                }
-              },
-              "reference" : "51e4a79b-8748-4b62-a156-a2dfc5f53f1e",
-              "hasValidationError" : false,
-              "id" : "pbText"
             }
           ]
         ]
